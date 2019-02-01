@@ -1,0 +1,44 @@
+.flat-filter-buttons {
+  display: flex;
+  // background-color: $gray-242;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  input {
+    @include visually-hidden();
+  }
+
+  label {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px 5px;
+    font: inherit;
+    font-weight: 800;
+    font-size: rem(32);
+    line-height: rem(25);
+    text-align: center;
+    color: $gray-138;
+    // background-color: #fafafa;
+    user-select: none;
+    transition: $duration;
+  }
+
+  input:hover + label {
+    color: $base-color;
+    background-color: $gray-242;
+  }
+
+  input:focus + label {
+    color: $base-color;
+  }
+
+  input:checked + label {
+    color: $accent-color;
+  }
+
+  @include mq-min-allow-vh($vh-height-bp) {
+    label {
+      font-size: vh(32);
+    }
+  }
+}

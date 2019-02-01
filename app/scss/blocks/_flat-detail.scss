@@ -1,0 +1,36 @@
+.flat-detail {
+  padding: 25px 35px;
+  background-color: #ffffff;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+}
+
+.flat-detail__features {
+  margin-bottom: 25px;
+}
+
+.flat-detail__form {
+  margin-bottom: 25px;
+}
+
+.flat-detail__actions {
+  text-align: center;
+}
+
+.flat-detail__to-print {
+  min-width: auto;
+  margin-bottom: 20px;
+  padding: 1px 17px;
+  font-weight: 600;
+  text-transform: none;
+  color: $brown-color;
+  border-radius: 100px;
+  background-color: $secondary-color;
+  box-shadow: none;
+}
+
+.flat-detail__disclamer {
+  line-height: 1.15;
+  text-align: center;
+  color: $muted-color;
+}

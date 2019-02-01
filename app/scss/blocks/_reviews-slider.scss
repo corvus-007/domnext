@@ -1,0 +1,23 @@
+.reviews-slider {
+
+}
+
+.reviews-slider__item {
+  padding-top: 20px;
+}
+
+.reviews-slider__navigation {
+  position: relative;
+  max-width: 220px;
+  min-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq-min(400px) {
+    max-width: 280px;
+  }
+
+  @include mq-min(400px) {
+    max-width: 280px;
+  }
+}

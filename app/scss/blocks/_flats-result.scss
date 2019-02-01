@@ -1,0 +1,64 @@
+.flats-result {
+  position: relative;
+  min-height: 300px;
+  transition: opacity $duration * 2;
+
+  &::before {
+    content: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-top: 5px solid $secondary-color;
+    border-right: 5px solid transparent;
+    border-radius: 50%;
+    animation: 1s spin linear infinite;
+  }
+
+  &--loading {
+    opacity: 0.25;
+    pointer-events: none;
+
+    &::before {
+      content: "";
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.flats-result__dashboard {
+  margin-bottom: 20px;
+
+  @include mq-min(768px) {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+  }
+}
+
+// .flats-result__to-request-flat {
+//   min-width: auto;
+//   padding: 3px 15px;
+//   font-weight: 600;
+//   line-height: 1.15;
+//   text-transform: none;
+//   color: $brown-color;
+//   background-color: $secondary-color;
+//   box-shadow: none;
+
+//   @include mq-max(480px) {
+//     padding-left: 8px;
+//     padding-right: 8px;
+//   }
+// }

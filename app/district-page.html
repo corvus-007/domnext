@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>О комплексе / Некст</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  @@include('blocks/main-header.html')
+
+  <main class="main">
+    <article class="common-page">
+      <header class="common-page__header container">
+        <h1 class="common-page__title common-title">О комплексе</h1>
+      </header>
+      <div class="common-page__body">
+        <div class="district common-section">
+          <div class="district__map-frame">
+            <div class="district__map" id="district-map"></div>
+            <div class="container">
+              <button class="district__legend-toggle district-legend-toggle" type="button">
+                <span class="district-legend-toggle__label">Показать легенду</span>
+              </button>
+              <div class="district__legend district-legend district-legend--hidden">
+                <button class="district-legend__close" type="button">Скрыть легенду</button>
+                <ul class="district-legend__list">
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_university.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Университет</span></li>
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_post.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Почта</span></li>
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_health.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Мед. учреждение</span></li>
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_food.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Питание</span></li>
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_mall.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Шоппинг</span></li>
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_park.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Парк</span></li>
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_bus-station.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Остановка</span></li>
+                  <li class="district-legend__item"><span class="district-legend__iconbox"><img src="images/district/district_gym.svg" width="36" height="45" class="district-legend__icon"></span><span class="district-legend__label">Фитнес</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  @@include('blocks/main-footer.html')
+  @@include('blocks/out-cover.html')
+  @@include('blocks/site-scripts.html')
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+.block-agree {
+  @include clear-mr-edges-elem();
+
+  font-size: 12px;
+  color: $gray-138;
+
+  a {
+    color: $gray-138;
+    border-bottom: 1px solid rgba($gray-138, 0.25);
+    transition: $duration;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $base-color;
+    }
+  }
+
+  @include mq-min(1280px) {
+    font-size: vh(12);
+  }
+}

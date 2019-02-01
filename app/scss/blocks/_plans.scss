@@ -1,0 +1,60 @@
+.place {
+  fill: #f0d38f;
+  stroke-width: 1px;
+  stroke: #333;
+  stroke-linejoin: round;
+  cursor: pointer;
+  transition: 0.25s;
+
+  &:hover {
+    fill: #8dc6ed;
+  }
+
+  &--busy,
+  &--busy:hover {
+    fill: #c4c4c4;
+    cursor: default;
+  }
+
+  &--clicked,
+  &--clicked:hover {
+    fill: #1ee2bb;
+  }
+}
+
+.plan svg g *:not(.place) {
+  pointer-events: none;
+}
+
+
+
+.ballon-place {
+  display: none;
+  position: absolute;
+  padding: 25px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 33px rgba(#000, 0.3);
+}
+
+.ballon-place__logo {
+  margin-bottom: 1rem;
+}
+
+.ballon-place__info {
+  font-size: rem(25);
+  // font-family: "bruskovayaplain";
+  margin-bottom: 1rem;
+}
+
+.ballon-place__area {
+  font-size: rem(36);
+  margin-bottom: 10px;
+}
+
+.ballon-place__status {
+
+}

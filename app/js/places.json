@@ -1,0 +1,57 @@
+{
+  "place_1_1": {
+    "area": "62,53",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_2": {
+    "area": "161,06",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_3": {
+    "area": "244,28",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_4": {
+    "area": "165,54",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_5": {
+    "area": "98,27",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_6": {
+    "area": "63,06",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_7": {
+    "area": "43,25",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_8": {
+    "area": "103,67",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_1_9": {
+    "area": "153,45",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_2_1": {
+    "area": "474,8",
+    "statusCode": "1",
+    "status": "Продается"
+  },
+  "place_2_2": {
+    "area": "608,1",
+    "statusCode": "1",
+    "status": "Продается"
+  }
+}

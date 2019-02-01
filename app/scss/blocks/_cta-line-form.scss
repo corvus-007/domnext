@@ -1,0 +1,60 @@
+.cta-line-form {
+
+}
+
+.cta-line-form__row {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq-max(666px) {
+    justify-content: center;
+  }
+
+  @include mq-min(667px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.cta-line-form__field {
+  width: 100%;
+
+  .field__label {
+    @include visually-hidden();
+  }
+
+  @include mq-range(568px, 666px) {
+    width: calc((100% - 1 * 20px) / 2);
+    margin-right: 20px;
+    box-sizing: border-box;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq-min(667px) {
+    margin-bottom: 0;
+    margin-right: vh(30);
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq-min(1024px) {
+    min-width: vh(220);
+  }
+}
+
+.cta-line-form__agree {
+  margin-bottom: 20px;
+}
+
+.cta-line-form__submit-wrapper {
+  text-align: center;
+}
+
+.cta-line-form__submit {
+
+}

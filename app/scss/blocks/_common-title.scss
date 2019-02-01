@@ -1,0 +1,14 @@
+.common-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: 1.15;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $accent-color;
+
+  @include mq-min-allow-vh($vh-height-bp) {
+    font-size: vh(24);
+  }
+}
