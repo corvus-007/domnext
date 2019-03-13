@@ -76,7 +76,7 @@
   transform-origin: 100%;
 
   @include mq-min(1024px) {
-    margin-top: vh(-7); // высота нижнего паддинга у ссылки
+    // margin-top: vh(-7); // высота нижнего паддинга у ссылки
     margin-left: vh(30);
     transition: $duration * 2;
 
@@ -101,35 +101,41 @@
     opacity: 0;
   }
 
-  .is-main-header-sticky &,
-  body:not(.homepage) & {
-    color: $base-color;
-  }
-
-  span {
-    font-size: rem(20);
-    vertical-align: sub;
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 
-  &:hover,
-  &:focus {
-    color: #ffffff;
+  .is-main-header-sticky &,
+  body:not(.homepage) & {
+    color: $base-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
+
+  // span {
+  //   font-size: rem(20);
+  //   vertical-align: sub;
+  //   color: $accent-color;
+  // }
+
 
   @include mq-min(375px) {
     font-size: 12px;
 
-    span {
-      font-size: 19px;
-    }
+    // span {
+    //   font-size: 19px;
+    // }
   }
 
   @include mq-min(1024px) {
     font-size: vh(18);
 
-    span {
-      font-size: vh(34);
-    }
+    // span {
+    //   font-size: vh(34);
+    // }
   }
 }

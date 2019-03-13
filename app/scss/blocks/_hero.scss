@@ -64,6 +64,14 @@
     max-width: 60%;
 
     span {
+      font-size: 40px;
+    }
+  }
+
+  @include mq-min(1280px) {
+    max-width: 50%;
+
+    span {
       font-size: 50px;
     }
   }

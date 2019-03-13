@@ -6,7 +6,11 @@
   background-color: #2b2a28;
 }
 
-.main-footer__inner {
+.main-footer__top {
+  padding-bottom: 40px;
+}
+
+.main-footer__top-inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,6 +19,22 @@
   @include mq-min(568px) {
     flex-direction: row;
   }
+}
+
+.main-footer__bottom-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mq-min(568px) {
+    flex-direction: row;
+  }
+}
+
+.main-footer__disclamer {
+  max-width: 600px;
+  text-align: center;
 }
 
 .main-footer__note {
