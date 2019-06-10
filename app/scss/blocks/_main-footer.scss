@@ -48,7 +48,7 @@
   }
 }
 
-.main-footer__copy {
+.main-footer__top-left {
   margin: 0;
   margin-bottom: 20px;
 
@@ -56,6 +56,33 @@
     margin-bottom: 0;
     margin-right: 20px;
   }
+}
+
+.main-footer__copy {
+  margin-bottom: 20px;
+}
+
+.main-footer__socials {
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @include mq-min(667px) {
+    margin: 0;
+  }
+}
+
+.main-footer__socials-item {
+  color: $gray-138;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+}
+
+.main-footer__socials-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .main-footer__documents {
@@ -113,10 +140,14 @@
 }
 
 @keyframes heartbeat {
-  0%, 40%, 80%, 100% {
-    transform: scale(.8);
+  0%,
+  40%,
+  80%,
+  100% {
+    transform: scale(0.8);
   }
-  20%, 60% {
+  20%,
+  60% {
     transform: scale(1);
   }
 }
