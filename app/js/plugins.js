@@ -9,3 +9,4 @@
 //=require ../../node_modules/gsap/src/minified/TweenMax.min.js
 //=require ../../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js
 ////=require ../../node_modules/nouislider/distribute/nouislider.min.js
+//=require ../../node_modules/current-device/umd/current-device.js

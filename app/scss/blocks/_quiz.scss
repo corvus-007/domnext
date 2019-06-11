@@ -1,0 +1,17 @@
+.quiz {
+  display: none !important;
+  background-color: #ffffff;
+
+  .ios & {
+    display: block !important;
+  }
+}
+
+.quiz__header {
+  text-align: center;
+  margin-bottom: 45px;
+
+  @include mq-min(1024px) {
+    margin-bottom: vh(60);
+  }
+}
