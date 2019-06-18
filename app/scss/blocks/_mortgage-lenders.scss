@@ -1,0 +1,43 @@
+.mortgage-lenders {
+}
+
+.mortgage-lenders__list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: -16px;
+
+  @include mq-min(768px) {
+    margin-bottom: -23px;
+  }
+}
+
+.mortgage-lenders__item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+
+  @include mq-max(567px) {
+    @include calc-column-width(2, 8px);
+  }
+
+  @include mq-range(568px, 767px) {
+    @include calc-column-width(3, 20px);
+  }
+
+  @include mq-min(768px) {
+    @include calc-column-width(4, 32px);
+
+    margin-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.mortgage-lenders__picture {
+}
