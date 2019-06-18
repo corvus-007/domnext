@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
+var babel = require('gulp-babel');
 var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var minify = require('gulp-csso');
@@ -28,10 +29,10 @@ gulp.task('style', function () {
     )
     .pipe(
       sass
-      .sync({
-        outputStyle: 'expanded'
-      })
-      .on('error', sass.logError)
+        .sync({
+          outputStyle: 'expanded'
+        })
+        .on('error', sass.logError)
     )
     .pipe(
       postcss([
@@ -40,7 +41,7 @@ gulp.task('style', function () {
         })
       ])
     )
-    // .pipe(minify())
+    .pipe(minify())
     .pipe(gulp.dest('build/'))
     .pipe(browserSync.stream()));
 });
@@ -58,6 +59,9 @@ gulp.task('modules-js', function () {
   gulp
     .src(['app/js/modules.js'])
     .pipe(include())
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
 });
@@ -71,6 +75,9 @@ gulp.task('copy-script', function () {
       '!app/js/modules.js',
       '!app/js/plugins.js'
     ])
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
 });

@@ -11,6 +11,7 @@
 // Vendors
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/flickity/dist/flickity";
 @import "../../node_modules/nouislider/distribute/nouislider";
 
 // Blocks
@@ -28,6 +29,7 @@
 @import "blocks/table";
 @import "blocks/file";
 @import "blocks/popup";
+@import "blocks/socials";
 @import "blocks/common-title";
 @import "blocks/common-section";
 // @import "blocks/custom-ol";
@@ -44,6 +46,7 @@
 @import "blocks/main-header";
 @import "blocks/scroll-down-pointer";
 @import "blocks/hero";
+@import "blocks/quiz";
 @import "blocks/fasad";
 @import "blocks/cta-line-form";
 @import "blocks/simple-cta";
@@ -57,6 +60,7 @@
 @import "blocks/significance-4";
 @import "blocks/about-slider";
 @import "blocks/about";
+@import "blocks/mortgage-lenders";
 // @import "blocks/filter-page";
 // @import "blocks/common-features-flat";
 // @import "blocks/flats-cards";
@@ -100,5 +104,7 @@
 @import "blocks/main-footer";
 @import "blocks/mobile-nav";
 @import "blocks/out-cover";
-@import "blocks/socials";
+@import "blocks/notification";
+@import "blocks/feature-popup-slider";
+@import "blocks/feature-popup";
 // @import "blocks/go-to-favorite-page";

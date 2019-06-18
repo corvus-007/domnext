@@ -11,3 +11,5 @@
 ////=require modules/flats-result.js
 ////=require modules/flat-filters.js
 ////=require modules/flat.js
+//=require modules/notification.js
+//=require modules/features-popups.js

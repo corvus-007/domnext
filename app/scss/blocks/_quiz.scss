@@ -8,8 +8,8 @@
 }
 
 .quiz__header {
-  text-align: center;
   margin-bottom: 45px;
+  text-align: center;
 
   @include mq-min(1024px) {
     margin-bottom: vh(60);
