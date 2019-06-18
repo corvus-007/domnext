@@ -1,0 +1,17 @@
+.feature-popup-slider {
+  .flickity-viewport,
+  .flickity-slider {
+    height: 100% !important;
+  }
+}
+
+.feature-popup-slider__item {
+  height: 100%;
+  width: 100%;
+}
+
+.feature-popup-slider__picture {
+  @include make-fit-object(16, 10);
+
+  height: 100%;
+}
