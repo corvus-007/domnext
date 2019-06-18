@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
   svg4everybody();
 
   $.fancybox.defaults.animationEffect = 'zoom-in-out';
@@ -101,4 +103,10 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.common-tabs').tabslet({
     animation: true
   });
+
+  const notificationEl = document.querySelector('[data-notification]');
+
+  if (notificationEl) {
+    window.notification.init();
+  }
 });
