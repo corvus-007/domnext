@@ -3,7 +3,7 @@
   padding-bottom: 30px;
   background-color: $secondary-color;
 
-  @include mq-minh($vh-height-bp) {
+  @include mq-min-allow-vh($vh-height-bp) {
     padding-top: vh(55);
     padding-bottom: vh(30);
   }

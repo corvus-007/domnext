@@ -109,4 +109,27 @@ document.addEventListener('DOMContentLoaded', function () {
   if (notificationEl) {
     window.notification.init();
   }
+
+  // const flatFiltersElem = document.querySelector('.flat-filters');
+
+  // if (flatFiltersElem) {
+  //   var locationSearch = location.search;
+
+  //   window.flatsResult.displayResult({
+  //     data: locationSearch
+  //   });
+
+  //   window.flatFilters.init();
+
+  //   var selectSortElem = document.querySelector('[name="sort-by"]');
+
+  //   selectSortElem.addEventListener('change', function (evt) {
+  //     window.flatsResult.renderFilteredFlats(window.util.filteredFlats);
+  //   });
+
+  //   var selectTypeNodeList = document.querySelectorAll('[data-target="checkboxes-select"]');
+  //   [...selectTypeNodeList].forEach((it) => {
+  //     new checkboxesSelect(it);
+  //   });
+  // }
 });

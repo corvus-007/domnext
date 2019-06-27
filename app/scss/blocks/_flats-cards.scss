@@ -3,37 +3,22 @@
 
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -15px;
 }
 
 .flats-cards__item {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
-  .flats-cards--display-list & {
-    // width: 100%;
-  }
-
-  @include mq-min(568px) {
+  @include mq-range(568px, 1279px) {
     .flats-cards--display-card & {
-      @include calc-column-width(3, 10px);
+      @include calc-column-width(2, 15px);
     }
   }
 
-  @include mq-range(600px, 767px) {
-    .flats-cards--display-list & {
-      @include calc-column-width(2, 10px);
-    }
-  }
-
-  @include mq-range(970px, 1365px) {
-    .flats-cards--display-list & {
-      @include calc-column-width(2, 10px);
-    }
-  }
-
-  @include mq-min(1366px) {
-    .flats-cards--display-list & {
-      @include calc-column-width(3, 10px);
+  @include mq-min(1280px) {
+    .flats-cards--display-card & {
+      @include calc-column-width(3, 15px);
     }
   }
 }

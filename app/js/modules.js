@@ -6,8 +6,10 @@
 //=require modules/map.js
 ////=require modules/district.js
 //=require modules/contacts-map.js
+////=require modules/checkboxes-select-class.js
 ////=require modules/favorites-cards.js
 ////=require modules/flats-cards.js
+////=require modules/flats-sort.js
 ////=require modules/flats-result.js
 ////=require modules/flat-filters.js
 ////=require modules/flat.js

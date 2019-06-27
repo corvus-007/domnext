@@ -1,17 +1,26 @@
 .quiz {
-  display: none !important;
+  // display: none !important;
   background-color: #ffffff;
 
   .ios & {
-    display: block !important;
+    // display: block !important;
   }
 }
 
 .quiz__header {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.quiz-person__text {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: rem(18);
   text-align: center;
 
-  @include mq-min(1024px) {
-    margin-bottom: vh(60);
+  @include mq-min-allow-vh($vh-height-bp) {
+    max-width: vh(650);
+    font-size: vh(18);
   }
 }
