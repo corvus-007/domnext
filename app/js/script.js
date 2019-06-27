@@ -32,24 +32,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  $('.js-reviews-slider').slick({
-    accessibility: false,
-    speed: 800,
-    dots: false,
-    arrows: false,
-    asNavFor: '.js-authors-reviews-slider'
-  });
+  // $('.js-reviews-slider').slick({
+  //   accessibility: false,
+  //   speed: 800,
+  //   dots: false,
+  //   arrows: false,
+  //   asNavFor: '.js-authors-reviews-slider'
+  // });
 
-  $('.js-authors-reviews-slider').slick({
-    accessibility: false,
-    slidesToShow: 3,
-    centerPadding: '0',
-    arrows: true,
-    centerMode: true,
-    speed: 800,
-    dots: false,
-    asNavFor: '.js-reviews-slider'
-  });
+  // $('.js-authors-reviews-slider').slick({
+  //   accessibility: false,
+  //   slidesToShow: 3,
+  //   centerPadding: '0',
+  //   arrows: true,
+  //   centerMode: true,
+  //   speed: 800,
+  //   dots: false,
+  //   asNavFor: '.js-reviews-slider'
+  // });
 
   var $aboutSlider = $('.js-about-slider');
 
