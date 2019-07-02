@@ -1,279 +1,404 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="format-detection" content="telephone=no">
-  <title>Главная</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body class="homepage">
+    @@include('blocks/main-header.html')
 
-</head>
-<body class="homepage">
-  @@include('blocks/main-header.html')
+    <div class="hero">
+      <div class="hero__inner">
+        <div class="hero__picture">
+          <!-- <img src="images/hero-image.jpg" srcset="images/hero-image@2x.jpg 2x" alt=""> -->
+        </div>
+        <div class="hero__content container">
+          <h1 class="hero__title">
+            ЖК Next на <br />
+            Куйбышева
+            <span>Квартиры комфорт-класса в центре Бежицы</span>
+          </h1>
 
-  <div class="hero">
-    <div class="hero__inner">
-      <div class="hero__picture">
-        <!-- <img src="images/hero-image.jpg" srcset="images/hero-image@2x.jpg 2x" alt=""> -->
+          <div class="hero__info-block hero-info-block">
+            <a href="" class="hero-info-block__wraplink">
+              <div class="hero-info-block__text-wrapper">
+                <h3 class="hero-info-block__title">
+                  <em>Специальное предложение</em>
+                  <strong>Ипотека <br />от 5%</strong>
+                </h3>
+              </div>
+              <div class="hero-info-block__media-wrapper">
+                <div class="hero-info-block__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a
+          class="hero__scroll-down-pointer scroll-down-pointer"
+          aria-label="Переход к следующей секции"
+        ></a>
+      </div>
+    </div>
+
+    <section class="quiz common-section">
+      <div class="quiz__inner container">
+        <div class="quiz__header">
+          <h2 class="common-title">Пройдите тест</h2>
+          <p class="involve-person__text">
+            и получите оптимальную подборку квартир со специальной ценой
+          </p>
+        </div>
+
+        <div class="quiz__action-wrapper">
+          <div class="marquiz__container">
+            <a
+              class="marquiz__button marquiz__button_blicked marquiz__button_rounded marquiz__button_shadow"
+              href="#popup:marquiz_5cf791597831a000447e69b1"
+              data-fixed-side=""
+              data-alpha-color="rgba(211, 64, 133, 0.5)"
+              data-color="#d34085"
+              data-text-color="#ffffff"
+              >Пройти тест</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="simple-cta common-section">
+      <div class="simple-cta__inner container">
+        <h2 class="simple-cta__title common-title">
+          Переходи на новый уровень жизни
+        </h2>
+        <p class="simple-cta__text">
+          Надоело жить в скучных типовых домах? Пришло время перемен!
+          Представляем вам новый формат недвижимости. Новый формат квартир.
+          Новый уровень вашей жизни!
+        </p>
+        <a
+          class="simple-cta__button button"
+          href=""
+          onclick="yaCounter50781313.reachGoal('ABOUT_CLICK'); return true;"
+          >Узнать о проекте</a
+        >
+      </div>
+    </div>
+
+    <section class="fasad">
+      <div class="fasad__picture">
+        <img
+          src="images/house-plan.png"
+          srcset="images/house-plan@2x.png"
+          alt=""
+        />
       </div>
       <div class="container">
-        <h1 class="hero__title">
-          ЖК Next на <br> Куйбышева
-          <span>Квартиры комфорт-класса в центре Бежицы</span>
-        </h1>
-      </div>
-      <a class="hero__scroll-down-pointer scroll-down-pointer" aria-label="Переход к следующей секции"></a>
-    </div>
-  </div>
-
-  <section class="quiz common-section">
-    <div class="quiz__inner container">
-      <div class="quiz__header">
-        <h2 class="common-title">Пройдите тест</h2>
-        <p class="involve-person__text">и получите оптимальную подборку квартир со специальной ценой</p>
-      </div>
-
-      <div class="quiz__action-wrapper">
-        <div class="marquiz__container">
-          <a class="marquiz__button marquiz__button_blicked marquiz__button_rounded marquiz__button_shadow" href="#popup:marquiz_5cf791597831a000447e69b1" data-fixed-side="" data-alpha-color="rgba(211, 64, 133, 0.5)" data-color="#d34085" data-text-color="#ffffff">Пройти тест</a>
+        <div class="fasad__content">
+          <h2 class="fasad__title">
+            ЖК «NEXT<br />
+            на Куйбышева»
+          </h2>
+          <p class="fasad__subtitle">
+            в самом центре <br />
+            Бежицкого района
+          </p>
+          <button
+            class="fasad__button button"
+            type="button"
+            data-fancybox
+            data-src="#popup-callback"
+          >
+            Узнать о наличии квартир
+          </button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="simple-cta common-section">
-    <div class="simple-cta__inner container">
-      <h2 class="simple-cta__title common-title">Переходи на новый уровень жизни</h2>
-      <p class="simple-cta__text">
-        Надоело жить в скучных типовых домах? Пришло время перемен! Представляем вам новый формат недвижимости. Новый формат квартир. Новый уровень вашей жизни!
-      </p>
-      <a class="simple-cta__button button" href="" onclick="yaCounter50781313.reachGoal('ABOUT_CLICK'); return true;">Узнать о проекте</a>
-    </div>
-  </div>
-
-  <section class="fasad">
-    <div class="fasad__picture">
-      <img src="images/house-plan.png" srcset="images/house-plan@2x.png" alt="">
-    </div>
-    <div class="container">
-      <div class="fasad__content">
-        <h2 class="fasad__title">
-          ЖК «NEXT<br>
-          на Куйбышева»
+    <div class="involve-person common-section" id="involve-person">
+      <div class="involve-person__inner container">
+        <h2 class="involve-person__title common-title">
+          Запишись на бесплатный просмотр прямо сейчас
         </h2>
-        <p class="fasad__subtitle">
-          в самом центре <br>
-          Бежицкого района
+        <p class="involve-person__text">
+          Пришло время лично оценить уровень жизни! Мы проведем для вас
+          персональную презентацию объекта.
         </p>
-        <button class="fasad__button button" type="button" data-fancybox data-src="#popup-callback">Узнать о наличии квартир</button>
+
+        <form
+          class="involve-person__form cta-line-form"
+          action=""
+          method="POST"
+        >
+          <div class="cta-line-form__row">
+            <label class="cta-line-form__field field">
+              <span class="field__label">Ваше имя</span>
+              <div class="field__control">
+                <input
+                  class="field__input input"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+            </label>
+            <label class="cta-line-form__field field">
+              <span class="field__label">Телефон</span>
+              <div class="field__control">
+                <input
+                  class="field__input input"
+                  type="tel"
+                  name="phone"
+                  placeholder="+7 (___) ___-__-__"
+                  required
+                />
+              </div>
+            </label>
+          </div>
+          <div class="cta-line-form__agree block-agree">
+            <p>
+              Нажимая кнопку «Записаться», вы соглашаетесь с
+              <a href="">Условиями</a> и <a href="">Правилами компании</a>
+            </p>
+          </div>
+          <div class="cta-line-form__submit-wrapper">
+            <button class="cta-line-form__submit button" type="submit">
+              Записаться
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-  </section>
 
-  <div class="involve-person common-section" id="involve-person">
-    <div class="involve-person__inner container">
-      <h2 class="involve-person__title common-title">Запишись на бесплатный просмотр прямо сейчас</h2>
-      <p class="involve-person__text">Пришло время лично оценить уровень жизни! Мы проведем для вас персональную презентацию объекта.</p>
+    <section class="features common-section">
+      <div class="features__inner container">
+        <ul class="features__list">
+          <li class="features__item">
+            <a
+              class="features__wraplink"
+              href="#feature-popup-1"
+              data-fancybox-feature
+              data-touch="false"
+            >
+              <div class="features__wrapicon">
+                <svg class="features__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#feat-first"></use>
+                </svg>
+              </div>
+              <strong class="features__caption"
+                >Развитая инфраструктура бежицкого района</strong
+              >
+            </a>
+          </li>
+          <li class="features__item">
+            <a
+              class="features__wraplink"
+              href="#feature-popup-2"
+              data-fancybox-feature
+              data-touch="false"
+            >
+              <div class="features__wrapicon">
+                <svg class="features__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#feat-01"></use>
+                </svg>
+              </div>
+              <strong class="features__caption"
+                >Развитая инфраструктура бежицкого района</strong
+              >
+            </a>
+          </li>
+          <li class="features__item">
+            <a class="features__wraplink" href="">
+              <div class="features__wrapicon">
+                <svg class="features__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#feat-02"></use>
+                </svg>
+              </div>
+              <strong class="features__caption">Подземный паркинг</strong>
+            </a>
+          </li>
+          <li class="features__item">
+            <a class="features__wraplink" href="">
+              <div class="features__wrapicon">
+                <svg class="features__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#feat-03"></use>
+                </svg>
+              </div>
+              <strong class="features__caption"
+                >Охраняемая территория с видеонаблюдением</strong
+              >
+            </a>
+          </li>
+          <li class="features__item">
+            <a class="features__wraplink" href="">
+              <div class="features__wrapicon">
+                <svg class="features__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#feat-04"></use>
+                </svg>
+              </div>
+              <strong class="features__caption"
+                >Детский игровой комплекс</strong
+              >
+            </a>
+          </li>
+          <li class="features__item">
+            <a class="features__wraplink" href="">
+              <div class="features__wrapicon">
+                <svg class="features__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#feat-05"></use>
+                </svg>
+              </div>
+              <strong class="features__caption"
+                >Квартиры с функциональными планировками</strong
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <form class="involve-person__form cta-line-form" action="" method="POST">
-        <div class="cta-line-form__row">
-          <label class="cta-line-form__field field">
-            <span class="field__label">Ваше имя</span>
-            <div class="field__control">
-              <input class="field__input input" type="text" name="name" placeholder="Ваше имя" required>
+    <section class="reviews common-section" hidden>
+      <div class="container">
+        <h2 class="reviews__title common-title">Уже выбрали NEXT</h2>
+        <p class="reviews__text">
+          Что лучше всего расскажет о нашей работе?<br />
+          Конечно же мнения тех, кто уже выбрал новый уровень жизни!
+        </p>
+        <div class="reviews-slider js-reviews-slider">
+          <div class="reviews-slider__item">
+            <div class="review">
+              <div class="review__author-picture">
+                <img
+                  data-origin-image
+                  data-ambilight
+                  src="http://i.pravatar.cc/300?img=10"
+                />
+              </div>
+              <b class="review__author-name">Евгений Сычев</b>
+              <blockquote class="review__text">
+                <p>
+                  Совру, если скажу, что я доволен приобретением... Нет, ребята,
+                  я просто в восторге! Функциональность квартир оценил не только
+                  я, но и жена с сыном. Про инфраструктуру вообще промолчу,
+                  поскольку все понимают всё без слов. Центр Бежицы, о чем тут
+                  говорить?!
+                </p>
+              </blockquote>
             </div>
-          </label>
-          <label class="cta-line-form__field field">
-            <span class="field__label">Телефон</span>
-            <div class="field__control">
-              <input class="field__input input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="reviews-slider__item">
+            <div class="review">
+              <div class="review__author-picture">
+                <img
+                  data-origin-image
+                  data-ambilight
+                  src="http://i.pravatar.cc/300?img=30"
+                />
+              </div>
+              <b class="review__author-name">Александр Степанов</b>
+              <blockquote class="review__text">
+                <p>
+                  Совру, если скажу, что я доволен приобретением… Нет, ребята, я
+                  просто в восторге! Функциональность квартир оценил не только я
+                </p>
+              </blockquote>
             </div>
-          </label>
-        </div>
-        <div class="cta-line-form__agree block-agree">
-          <p>Нажимая кнопку «Записаться», вы соглашаетесь с <a href="">Условиями</a> и <a href="">Правилами компании</a></p>
-        </div>
-        <div class="cta-line-form__submit-wrapper">
-          <button class="cta-line-form__submit button" type="submit">Записаться</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <section class="features common-section">
-    <div class="features__inner container">
-      <ul class="features__list">
-        <li class="features__item">
-          <a class="features__wraplink" href="#feature-popup-1" data-fancybox-feature data-touch="false">
-
-            <div class="features__wrapicon">
-              <svg class="features__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#feat-first"></use>
-              </svg>
+          </div>
+          <div class="reviews-slider__item">
+            <div class="review">
+              <div class="review__author-picture">
+                <img
+                  data-origin-image
+                  data-ambilight
+                  src="http://i.pravatar.cc/300?img=3"
+                />
+              </div>
+              <b class="review__author-name">Кто-то еще</b>
+              <blockquote class="review__text">
+                <p>
+                  Совру, если скажу, что я доволен приобретением… Нет, ребята, я
+                  просто в восторге! Функциональность квартир оценил не только я
+                </p>
+              </blockquote>
             </div>
-            <strong class="features__caption">Развитая инфраструктура бежицкого района</strong>
-
-          </a>
-        </li>
-        <li class="features__item">
-          <a class="features__wraplink" href="#feature-popup-2" data-fancybox-feature data-touch="false">
-
-            <div class="features__wrapicon">
-              <svg class="features__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#feat-01"></use>
-              </svg>
+          </div>
+          <div class="reviews-slider__item">
+            <div class="review">
+              <div class="review__author-picture">
+                <img
+                  data-origin-image
+                  data-ambilight
+                  src="http://i.pravatar.cc/300?img=14"
+                />
+              </div>
+              <b class="review__author-name">Кто-то еще</b>
+              <blockquote class="review__text">
+                <p>
+                  Совру, если скажу, что я доволен приобретением… Нет, ребята, я
+                  просто в восторге! Функциональность квартир оценил не только я
+                </p>
+              </blockquote>
             </div>
-            <strong class="features__caption">Развитая инфраструктура бежицкого района</strong>
-
-          </a>
-        </li>
-        <li class="features__item">
-          <a class="features__wraplink" href="">
-
-            <div class="features__wrapicon">
-              <svg class="features__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#feat-02"></use>
-              </svg>
-            </div>
-            <strong class="features__caption">Подземный паркинг</strong>
-
-          </a>
-        </li>
-        <li class="features__item">
-          <a class="features__wraplink" href="">
-
-            <div class="features__wrapicon">
-              <svg class="features__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#feat-03"></use>
-              </svg>
-            </div>
-            <strong class="features__caption">Охраняемая территория с видеонаблюдением</strong>
-
-          </a>
-        </li>
-        <li class="features__item">
-          <a class="features__wraplink" href="">
-
-            <div class="features__wrapicon">
-              <svg class="features__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#feat-04"></use>
-              </svg>
-            </div>
-            <strong class="features__caption">Детский игровой комплекс</strong>
-
-          </a>
-        </li>
-        <li class="features__item">
-          <a class="features__wraplink" href="">
-
-            <div class="features__wrapicon">
-              <svg class="features__icon" width="16" height="16">
-                <use xlink:href="images/symbols.svg#feat-05"></use>
-              </svg>
-            </div>
-            <strong class="features__caption">Квартиры с функциональными планировками</strong>
-
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="reviews common-section" hidden>
-    <div class="container">
-      <h2 class="reviews__title common-title">Уже выбрали NEXT</h2>
-      <p class="reviews__text">
-        Что лучше всего расскажет о нашей работе?<br>
-        Конечно же мнения тех, кто уже выбрал новый уровень жизни!
-      </p>
-      <div class="reviews-slider js-reviews-slider">
-        <div class="reviews-slider__item">
-          <div class="review">
-            <div class="review__author-picture">
-              <img data-origin-image data-ambilight src="http://i.pravatar.cc/300?img=10">
-            </div>
-            <b class="review__author-name">Евгений Сычев</b>
-            <blockquote class="review__text">
-              <p>Совру, если скажу, что я доволен приобретением... Нет, ребята, я просто в восторге! Функциональность квартир оценил не только я, но и жена с сыном. Про инфраструктуру вообще промолчу, поскольку все понимают всё без слов. Центр Бежицы, о чем тут говорить?!</p>
-            </blockquote>
           </div>
         </div>
-        <div class="reviews-slider__item">
-          <div class="review">
-            <div class="review__author-picture">
-              <img data-origin-image data-ambilight src="http://i.pravatar.cc/300?img=30">
+        <div class="reviews-slider__navigation">
+          <div class="authors-reviews-slider js-authors-reviews-slider">
+            <div class="authors-reviews-slider__item">
+              <div class="authors-reviews-slider__item-inner">
+                <div class="authors-reviews-slider__photo">
+                  <img
+                    src="http://i.pravatar.cc/300?img=10"
+                    alt="Евгений Сычев"
+                  />
+                </div>
+              </div>
             </div>
-            <b class="review__author-name">Александр Степанов</b>
-            <blockquote class="review__text">
-              <p>Совру, если скажу, что я доволен приобретением… Нет, ребята, я просто в восторге! Функциональность квартир оценил не только я</p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="reviews-slider__item">
-          <div class="review">
-            <div class="review__author-picture">
-              <img data-origin-image data-ambilight src="http://i.pravatar.cc/300?img=3">
+            <div class="authors-reviews-slider__item">
+              <div class="authors-reviews-slider__item-inner">
+                <div class="authors-reviews-slider__photo">
+                  <img
+                    src="http://i.pravatar.cc/300?img=30"
+                    alt="Александр Степанов"
+                  />
+                </div>
+              </div>
             </div>
-            <b class="review__author-name">Кто-то еще</b>
-            <blockquote class="review__text">
-              <p>Совру, если скажу, что я доволен приобретением… Нет, ребята, я просто в восторге! Функциональность квартир оценил не только я</p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="reviews-slider__item">
-          <div class="review">
-            <div class="review__author-picture">
-              <img data-origin-image data-ambilight src="http://i.pravatar.cc/300?img=14">
+            <div class="authors-reviews-slider__item">
+              <div class="authors-reviews-slider__item-inner">
+                <div class="authors-reviews-slider__photo">
+                  <img src="http://i.pravatar.cc/300?img=3" alt="Кто-то еще" />
+                </div>
+              </div>
             </div>
-            <b class="review__author-name">Кто-то еще</b>
-            <blockquote class="review__text">
-              <p>Совру, если скажу, что я доволен приобретением… Нет, ребята, я просто в восторге! Функциональность квартир оценил не только я</p>
-            </blockquote>
+            <div class="authors-reviews-slider__item">
+              <div class="authors-reviews-slider__item-inner">
+                <div class="authors-reviews-slider__photo">
+                  <img src="http://i.pravatar.cc/300?img=14" alt="Кто-то еще" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="reviews-slider__navigation">
-        <div class="authors-reviews-slider js-authors-reviews-slider">
-          <div class="authors-reviews-slider__item">
-            <div class="authors-reviews-slider__item-inner">
-              <div class="authors-reviews-slider__photo">
-                <img src="http://i.pravatar.cc/300?img=10" alt="Евгений Сычев">
-              </div>
-            </div>
-          </div>
-          <div class="authors-reviews-slider__item">
-            <div class="authors-reviews-slider__item-inner">
-              <div class="authors-reviews-slider__photo">
-                <img src="http://i.pravatar.cc/300?img=30" alt="Александр Степанов">
-              </div>
-            </div>
-          </div>
-          <div class="authors-reviews-slider__item">
-            <div class="authors-reviews-slider__item-inner">
-              <div class="authors-reviews-slider__photo">
-                <img src="http://i.pravatar.cc/300?img=3" alt="Кто-то еще">
-              </div>
-            </div>
-          </div>
-          <div class="authors-reviews-slider__item">
-            <div class="authors-reviews-slider__item-inner">
-              <div class="authors-reviews-slider__photo">
-                <img src="http://i.pravatar.cc/300?img=14" alt="Кто-то еще">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="map map--no-js" id="map"></div>
+    <div class="map map--no-js" id="map"></div>
 
-  @@include('blocks/main-footer.html')
-  @@include('blocks/popup-callback.html')
-  @@include('blocks/features-popups.html')
-  @@include('blocks/site-scripts.html')
-</body>
+    @@include('blocks/main-footer.html') @@include('blocks/popup-callback.html')
+    @@include('blocks/features-popups.html')
+    @@include('blocks/site-scripts.html')
+  </body>
 </html>

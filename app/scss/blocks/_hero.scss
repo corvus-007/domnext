@@ -46,7 +46,7 @@
 
 .hero__title {
   position: absolute;
-  top: 53%;
+  top: 36%;
   transform: translateY(-50%);
   text-shadow: 0 0 90px rgba(#000000, 0.4);
   margin: 0;
@@ -64,7 +64,8 @@
   }
 
   @include mq-min(768px) {
-    font-size: 85px;
+    top: 40%;
+    font-size: 84px;
     max-width: 60%;
 
     span {
@@ -73,10 +74,21 @@
   }
 
   @include mq-min(1280px) {
+    top: 44%;
     max-width: 50%;
 
     span {
       font-size: 50px;
     }
+  }
+}
+
+.hero__info-block {
+  position: absolute;
+  right: 20px;
+  bottom: 20%;
+
+  @include mq-min(768px) {
+    right: 40px;
   }
 }

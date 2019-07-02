@@ -50,6 +50,19 @@
     font-size: 11px;
   }
 
+  &[disabled] {
+    cursor: not-allowed;
+    filter: grayscale(1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffffff;
+      background-color: $accent-color;
+      box-shadow: 0 18px 25px rgba($accent-color, 0.5);
+    }
+  }
+
   @include mq-min-allow-vh($vh-height-bp) {
     min-width: vh(200);
     padding: calc(#{vh(13)} - 4px) calc(#{vh(36)} - 4px);
@@ -71,6 +84,14 @@
       padding-right: calc(#{vh(30)} - 4px);
       font-weight: 700;
       font-size: vh(11);
+    }
+
+    &[disabled] {
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: 0 vh(18) vh(25) rgba($accent-color, 0.5);
+      }
     }
   }
 }
