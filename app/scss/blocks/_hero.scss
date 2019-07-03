@@ -63,6 +63,7 @@
   }
 
   @include mq-min(768px) {
+    margin-bottom: 48px;
     font-size: 76px;
   }
 }
