@@ -15,3 +15,4 @@
 ////=require modules/flat.js
 //=require modules/notification.js
 //=require modules/features-popups.js
+//=require modules/about-section.js
