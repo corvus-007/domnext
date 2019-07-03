@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Lato';
     src: local('Lato Hairline'), local('Lato-Hairline'), url('fonts/lato/latohairline.woff2') format('woff2'), url('fonts/lato/latohairline.woff') format('woff'), url('fonts/lato/latohairline.ttf') format('truetype');
@@ -107,3 +106,33 @@
     font-weight: 900;
     font-style: italic;
 }
+
+// Noah
+
+@font-face {
+    font-family: "Noah";
+    src: local("Noah Regular Italic"), local("Noah-RegularItalic"), url("fonts/noah/Noahregularitalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Noah";
+    src: local("Noah Regular"), local("Noah-Regular"), url("fonts/noah/Noahregular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Noah";
+    src: local("Noah Bold Italic"), local("Noah-BoldItalic"), url("fonts/noah/Noahbolditalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Noah";
+    src: local("Noah Bold"), local("Noah-Bold"), url("fonts/noah/Noahbold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
