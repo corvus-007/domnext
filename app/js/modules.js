@@ -16,3 +16,4 @@
 //=require modules/notification.js
 //=require modules/features-popups.js
 //=require modules/about-section.js
+//=require modules/hero-section.js
