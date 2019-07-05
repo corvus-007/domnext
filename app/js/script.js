@@ -104,11 +104,11 @@ document.addEventListener('DOMContentLoaded', function () {
     animation: true
   });
 
-  const notificationEl = document.querySelector('[data-notification]');
+  // const notificationEl = document.querySelector('[data-notification]');
 
-  if (notificationEl) {
-    window.notification.init();
-  }
+  // if (notificationEl) {
+  //   window.notification.init();
+  // }
 
   // const flatFiltersElem = document.querySelector('.flat-filters');
 
