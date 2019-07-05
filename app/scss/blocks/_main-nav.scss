@@ -5,11 +5,11 @@
 
 .main-nav__to-open-plan {
   margin-right: 5px;
+  min-width: auto;
 
   @include mq-range(1024px, 1200px) {
-    min-width: auto;
-    padding: 8px 12px;
     font-size: 12px;
+    padding: 8px 16px;
   }
 }
 
@@ -34,7 +34,7 @@
     transition: $duration * 1.5;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       bottom: vh(1);
       left: vh(10);
@@ -101,7 +101,7 @@
 
   @include mq-range(1024px, 1200px) {
     a {
-      font-size: 12px
+      font-size: 12px;
     }
   }
 }

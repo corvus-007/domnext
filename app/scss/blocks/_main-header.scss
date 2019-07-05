@@ -76,6 +76,7 @@
   transform-origin: 100%;
 
   @include mq-min(1024px) {
+    margin-left: 28px;
     transition: $duration * 2;
 
     .is-main-header-sticky & {

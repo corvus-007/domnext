@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Специальное предложение / Некст</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  @@include('blocks/main-header.html')
+
+  <main class="main">
+    <article class="common-page mortgage-page">
+      <header class="common-page__header container">
+        <h1 class="common-page__title common-title">Специальное предложение</h1>
+      </header>
+      <div class="common-page__body container container--slim textual">
+        <div class="special-offer-box">
+          <h2 class="special-offer-box__title common-title">«Квартира с выгодой 200 000 рублей»</h2>
+          <div class="special-offer-box__grid">
+            <div class="special-offer-box__grid-column special-offer-box__picture-wrapper">
+              <div class="special-offer-box__picture">
+                <img src="images/dom.jpg" alt="Рендер NEXT на Куйбышева" role="presentation">
+              </div>
+            </div>
+            <div class="special-offer-box__grid-column special-offer-box__form-wrapper">
+              <form action="" class="special-offer-box__form special-offer-form">
+                <label class="special-offer-form__field field">
+                  <span class="field__label">Имя</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="text" name="request_mortgage_name" placeholder="Ваше имя" />
+                  </div>
+                </label>
+                <label class="special-offer-form__field field">
+                  <span class="field__label">Телефон</span>
+                  <div class="field__control">
+                    <input class="field__input input" type="tel" name="request_mortgage_phone" placeholder="+7 (___) ___-__-__" required />
+                  </div>
+                </label>
+                <div class="u-text-center form-submit-wrapper">
+                  <input class="button form-submit" type="submit" value="Подобрать выгодную ипотеку" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div style="font-size: 12px;">
+          <p>С 1 июля 2019 года вы можете приобрести трёхкомнатную комнатную квартиру 99,22 кв.м на седьмом этаже в жилом комплексе «NEXT на Куйбышева» от Застройщика ООО «Строй Трест» со скидкой 200 000 рублей. Срок действия акции — до 31 июля 2019 года. Проектная декларация на сайте domnext.ru<br>
+            Уточнить подробности можно по номеру 303 303 или в офисе продаж расположенному по адресу: г. Брянск, Степная д.12, оф.11.</p>
+          <p>* Oбращаем вaше внимaние нa то, что информация о наличии данной квартиры представлена на сайте для справки, нoсит исключитeльно ознакомительный харaктер и не являютcя публичнoй офeртой, опрeделённой пунктoм 2 стaтьи 437 Граждaнского кoдекса Российской Федерации. Для пoлучения подрoбной инфoрмации о квартире участвующей в акции, её нaличии и стoимости, свяжитесь с менеджерами отдела продаж нашей компании.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  @@include('blocks/main-footer.html') @@include('blocks/out-cover.html')
+  @@include('blocks/site-scripts.html')
+</body>
+</html>
