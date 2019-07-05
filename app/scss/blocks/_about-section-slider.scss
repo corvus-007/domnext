@@ -1,0 +1,12 @@
+.about-section-slider {
+}
+
+.about-section-slider__item {
+  width: 100%;
+}
+
+.about-section-slider__picture {
+  @include make-fit-object(16, 10);
+
+  width: 100%;
+}

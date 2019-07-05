@@ -8,14 +8,25 @@
 }
 
 .choose-mortgage-box__grid {
+  display: flex;
+  flex-direction: column-reverse;
+
   @include mq-min(768px) {
-    display: flex;
+    flex-direction: row;
   }
 }
 
 .choose-mortgage-box__column {
   @include mq-min(768px) {
     @include calc-column-width(2, 56px);
+  }
+}
+
+.choose-mortgage-box__grid-right {
+  margin-bottom: 40px;
+
+  @include mq-min(768px) {
+    margin-bottom: 0;
   }
 }
 

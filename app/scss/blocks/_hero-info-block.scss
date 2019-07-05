@@ -1,6 +1,10 @@
 .hero-info-block {
 }
 
+.hero-info-block__slider {
+  width: 100%;
+}
+
 .hero-info-block__wraplink {
   display: flex;
   align-items: center;
@@ -40,8 +44,15 @@
 
   strong {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    text-shadow: 0 0 8px $base-color, 0 0 16px $base-color;
+  }
+
+  @include mq-min(568px) {
+    strong {
+      font-size: 20px;
+    }
   }
 
   @include mq-min(768px) {
@@ -56,8 +67,14 @@
 }
 
 .hero-info-block__media-wrapper {
-  width: 160px;
-  margin-left: 20px;
+  flex-shrink: 0;
+  width: 120px;
+  margin-left: 16px;
+
+  @include mq-min(568px) {
+    width: 160px;
+    margin-left: 20px;
+  }
 
   @include mq-min(768px) {
     width: 220px;
@@ -73,7 +90,13 @@
 
   .hero-info-block__wraplink:hover &,
   .hero-info-block__wraplink:focus & {
-    transform: scale(1.04);
     box-shadow: 0 4px 20px rgba(#000000, 0.6);
+  }
+
+  @media (pointer: fine) {
+    .hero-info-block__wraplink:hover &,
+    .hero-info-block__wraplink:focus & {
+      transform: scale(1.04);
+    }
   }
 }

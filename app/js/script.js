@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   'use strict';
 
   svg4everybody();
@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
   $.fancybox.defaults.preventCaptionOverlap = false;
 
   $('input[type="tel"]').inputmask({
-    "mask": "+7 (999) 999-99-99"
+    mask: '+7 (999) 999-99-99'
   });
 
   var scrollDownPointer = document.querySelector('.scroll-down-pointer');
   var headerStickyHeight = 76;
 
   if (scrollDownPointer) {
-    scrollDownPointer.addEventListener('click', function (evt) {
+    scrollDownPointer.addEventListener('click', function(evt) {
       evt.preventDefault();
       window.scrollTo({
         top: document.documentElement.clientHeight - headerStickyHeight,
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 0) {
       document.body.classList.add('is-main-header-sticky');
@@ -58,17 +58,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var slidesCount;
     var $sliderCounter = $aboutSlider.find('.about-slider__counter');
 
-    var updateSliderCounter = function (slick, currentIndex) {
+    var updateSliderCounter = function(slick, currentIndex) {
       currentSlide = slick.slickCurrentSlide() + 1;
       slidesCount = slick.slideCount;
       $sliderCounter.text(currentSlide + '/' + slidesCount);
     };
 
-    $aboutSlider.on('init', function (event, slick) {
+    $aboutSlider.on('init', function(event, slick) {
       updateSliderCounter(slick);
     });
 
-    $aboutSlider.on('click', '.about-slider__control', function (evt) {
+    $aboutSlider.on('click', '.about-slider__control', function(evt) {
       evt.preventDefault();
       var direction = this.dataset.slideAction;
       switch (direction) {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    $aboutSlider.on('afterChange', function (event, slick, currentSlide) {
+    $aboutSlider.on('afterChange', function(event, slick, currentSlide) {
       updateSliderCounter(slick, currentSlide);
     });
 
@@ -91,12 +91,14 @@ document.addEventListener('DOMContentLoaded', function () {
       dots: false,
       infinite: true,
       slide: '.about-slider__item',
-      responsive: [{
-        breakpoint: 1024,
-        settings: {
-          arrows: false
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: false
+          }
         }
-      }]
+      ]
     });
   }
 
@@ -132,4 +134,16 @@ document.addEventListener('DOMContentLoaded', function () {
   //     new checkboxesSelect(it);
   //   });
   // }
+
+  var commonPlansSlider = document.querySelector('[data-common-plans-slider]');
+
+  if (commonPlansSlider) {
+    $(commonPlansSlider).flickity({
+      adaptiveHeight: false,
+      imagesLoaded: true,
+      wrapAround: true,
+      lazyLoad: 3,
+      selectedAttraction: 0.02,
+    });
+  }
 });

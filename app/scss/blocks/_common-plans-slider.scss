@@ -1,0 +1,56 @@
+.common-plans-slider {
+  margin-top: 30px;
+
+  .flickity-page-dots {
+    bottom: -36px;
+  }
+
+  .dot {
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: $brown-color;
+    transition: transform $duration;
+
+    &:not(.is-selected) {
+      transform: scale3d(0.7, 0.7, 0.7);
+    }
+  }
+
+  .flickity-slider {
+    display: flex;
+  }
+}
+
+.common-plans-slider__item {
+  width: 100%;
+  box-sizing: border-box;
+  will-change: transform, opacity;
+
+  @include mq-min(568px) {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: calc(100% / 3);
+    transform: scale3d(0.8, 0.8, 0.8);
+    opacity: 0.6;
+    transition: transform $duration * 2, opacity $duration * 2;
+
+    &.is-selected {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.common-plans-slider__picture {
+  @include make-fit-object(1, 1, contain);
+
+  margin-bottom: 28px;
+}
+
+.common-plans-slider__caption {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+}

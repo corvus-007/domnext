@@ -16,6 +16,7 @@
 
 // Blocks
 @import "blocks/override-fancybox";
+@import "blocks/common-plans-slider";
 @import "blocks/button";
 @import "blocks/input";
 @import "blocks/select";
@@ -45,10 +46,15 @@
 @import "blocks/header-logo-svg";
 @import "blocks/main-nav";
 @import "blocks/main-header";
+
 @import "blocks/scroll-down-pointer";
+@import "blocks/hero-info-slider";
 @import "blocks/hero-info-block";
+@import "blocks/all-apartments-section";
 @import "blocks/hero";
 @import "blocks/quiz";
+@import "blocks/about-section-slider";
+@import "blocks/about-section";
 @import "blocks/fasad";
 @import "blocks/cta-line-form";
 @import "blocks/simple-cta";
