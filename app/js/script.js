@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
     animation: true
   });
 
-  // const notificationEl = document.querySelector('[data-notification]');
+  const notificationEl = document.querySelector('[data-notification]');
 
-  // if (notificationEl) {
-  //   window.notification.init();
-  // }
+  if (notificationEl) {
+    window.notification.init();
+  }
 
   // const flatFiltersElem = document.querySelector('.flat-filters');
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
       imagesLoaded: true,
       wrapAround: true,
       lazyLoad: 3,
-      selectedAttraction: 0.02,
+      selectedAttraction: 0.02
     });
   }
 });

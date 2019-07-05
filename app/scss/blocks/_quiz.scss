@@ -61,4 +61,8 @@
 .quiz__links-wrapper {
   margin: 0;
   margin-top: 40px;
+
+  @include mq-max(480px) {
+    text-align: center;
+  }
 }

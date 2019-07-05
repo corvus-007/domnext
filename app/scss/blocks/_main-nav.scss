@@ -5,6 +5,12 @@
 
 .main-nav__to-open-plan {
   margin-right: 5px;
+
+  @include mq-range(1024px, 1200px) {
+    min-width: auto;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
 }
 
 .main-nav__list {
@@ -92,4 +98,10 @@
   //     background-color: transparent;
   //   }
   // }
+
+  @include mq-range(1024px, 1200px) {
+    a {
+      font-size: 12px
+    }
+  }
 }
