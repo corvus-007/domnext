@@ -1,0 +1,29 @@
+.special-offer-box {
+}
+
+.special-offer-box__title {
+  margin-bottom: 24px;
+  // font-size: 32px;
+  text-align: center;
+}
+
+.special-offer-box__grid {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include mq-min(768px) {
+    flex-direction: row;
+  }
+}
+
+.special-offer-box__grid-column {
+  @include mq-min(768px) {
+    @include calc-column-width(2, 56px);
+  }
+}
+
+.special-offer-box__picture-wrapper {
+}
+
+.special-offer-box__form-wrapper {
+}
