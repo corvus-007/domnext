@@ -3,8 +3,7 @@
 
 .special-offer-box__title {
   margin-bottom: 24px;
-  // font-size: 32px;
-  text-align: center;
+  font-size: 32px;
 }
 
 .special-offer-box__grid {
@@ -18,12 +17,21 @@
 
 .special-offer-box__grid-column {
   @include mq-min(768px) {
-    @include calc-column-width(2, 56px);
+    @include calc-column-width(2, 48px);
   }
 }
 
 .special-offer-box__picture-wrapper {
 }
 
+.special-offer-box__picture {
+  @include make-fit-object(16, 10);
+}
+
 .special-offer-box__form-wrapper {
+  margin-bottom: 40px;
+
+  @include mq-min(768px) {
+    margin-bottom: 0;
+  }
 }
