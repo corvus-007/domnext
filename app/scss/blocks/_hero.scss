@@ -131,16 +131,11 @@
   position: absolute;
   left: 20px;
   right: 20px;
-  // min-width: 300px;
-  bottom: 12%;
+  bottom: 20%;
 
   @include mq-min(768px) {
     left: 40px;
     right: 40px;
-    bottom: 12%;
-  }
-
-  @include mq-min(1024px) {
     bottom: 16%;
   }
 }

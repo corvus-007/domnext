@@ -2,10 +2,14 @@
   background-color: #f5e8e2;
 
   @include mq-min(1024px) {
-    background-image: url("images/bg-quiz-section.png");
+    background-image: url('images/bg-quiz-section.png');
     background-repeat: no-repeat;
     background-position: calc(100% + 150px) 50%;
     background-size: auto 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('images/bg-quiz-section@2x.png');
+    }
   }
 
   @include mq-min(1280px) {
@@ -61,4 +65,8 @@
 .quiz__links-wrapper {
   margin: 0;
   margin-top: 40px;
+
+  @include mq-max(480px) {
+    text-align: center;
+  }
 }

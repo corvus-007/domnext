@@ -57,10 +57,13 @@
 .about-section__links-wrapper {
   margin: 0;
   margin-top: 40px;
+
+  @include mq-max(480px) {
+    text-align: center;
+  }
 }
 
 .about-section__link {
-
 }
 
 .about-section__slider-wrapper {
@@ -68,7 +71,6 @@
     align-self: center;
     width: 50%;
   }
-
 }
 
 .about-section__slider {
