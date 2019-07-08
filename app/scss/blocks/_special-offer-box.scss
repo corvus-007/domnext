@@ -12,16 +12,20 @@
 
   @include mq-min(768px) {
     flex-direction: row;
+    align-items: center;
   }
 }
 
 .special-offer-box__grid-column {
-  @include mq-min(768px) {
-    @include calc-column-width(2, 48px);
-  }
 }
 
 .special-offer-box__picture-wrapper {
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  @include mq-min(768px) {
+    margin-right: 48px;
+  }
 }
 
 .special-offer-box__picture {
