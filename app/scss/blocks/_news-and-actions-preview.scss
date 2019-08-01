@@ -1,0 +1,24 @@
+.news-and-actions-preview {
+}
+
+.news-and-actions-preview__columns {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include mq-min(1024px) {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.news-and-actions-preview__column {
+  @include mq-min(1024px) {
+    @include calc-column-width(2, 40px);
+
+    &--actions {
+      position: sticky;
+      top: calc(#{$height-header-desktop--sticky} + 32px);
+    }
+  }
+}

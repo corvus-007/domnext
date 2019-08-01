@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Новости и акции / Гринвуд</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  @@include('blocks/main-header.html')
+
+  <main class="main">
+    <article class="common-page">
+      <header class="common-page__header container">
+        <h1 class="common-page__title common-title">Новости и акции</h1>
+      </header>
+      <div class="common-page__body news-and-actions-preview container">
+        <div class="news-and-actions-preview__columns">
+          <section class="news-and-actions-preview__column events-preview">
+            <h2 class="visually-hidden">Новости и акции</h2>
+            <ul class="events-preview__list">
+              <li class="news-preview__item one-event-preview">
+                <a class="one-event-preview__wraplink" href="one-event-page.html">
+                  <div class="one-event-preview__picture">
+                    <img src="https://images.unsplash.com/photo-1536702567485-2c5f40fec9c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf961f745651a312b7174f1451caf925&auto=format&fit=crop&w=1350&q=80" alt="«Гринвуд». Решать Вам!">
+                  </div>
+                  <div class="one-event-preview__body">
+                    <time class="one-event-preview__date" datetime="2018-07-04">
+                      <span>04</span> июн
+                    </time>
+                    <h2 class="one-event-preview__title">"Гринвуд". Решать Вам!</h2>
+                    <div class="one-event-preview__text">
+                      <p>Кто паркуется около вашего дома? Вдыхать чистый лесной воздух или выхлопные газы? В какую школу пойдут ваши дети? </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="news-and-actions-preview__column news-and-actions-preview__column--actions actions-preview">
+            <h2 class="visually-hidden">Акции</h2>
+            <div class="actions-preview-slider" data-actions-preview-slider>
+              <div class="actions-preview-slider__item carousel-cell one-action-preview">
+                <a class="one-action-preview__wraplink" href="one-event-page.html">
+                  <div class="one-action-preview__picture">
+                    <img data-flickity-lazyload="https://images.unsplash.com/11/berries.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Семейный паркинг с выгодой 400 000 рублей" />
+                  </div>
+                  <div class="one-action-preview__overlay">
+                    <div class="one-action-preview__content">
+                      <time class="one-action-preview__date" datetime="2019-07-24">25 июля</time>
+                      <h3 class="one-action-preview__title">Семейный паркинг с выгодой 400 000 рублейСемейный паркинг с выгодой 400 000 рублей</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="actions-preview-slider__item carousel-cell one-action-preview">
+                <a class="one-action-preview__wraplink" href="one-event-page.html">
+                  <div class="one-action-preview__picture">
+                    <img data-flickity-lazyload="https://images.unsplash.com/reserve/OnRKhvlFQ2uJNSx5O3cc_DSC00560.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80" alt="Квартира в рассрочку под 0%" />
+                  </div>
+                  <div class="one-action-preview__overlay">
+                    <div class="one-action-preview__content">
+                      <time class="one-action-preview__date" datetime="2019-07-24">25 июля</time>
+                      <h3 class="one-action-preview__title">Квартира в рассрочку под 0%</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  @@include('blocks/main-footer.html')
+  @@include('blocks/site-scripts.html')
+</body>
+
+</html>

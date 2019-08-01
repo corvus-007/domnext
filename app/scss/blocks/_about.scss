@@ -12,9 +12,39 @@
 }
 
 .about__fullwidth-picture {
-  @include make-fit-object(16, 8);
+  // @include make-fit-object(16, 8);
 
   @include mq-min(768px) {
-    @include make-fit-object(16, 3);
+    // @include make-fit-object(16, 3);
   }
+}
+
+.about-block {
+
+}
+
+.about-block__inner {
+
+}
+
+.about-block__columns {
+  @include mq-min(1024px) {
+    display: flex;
+  }
+}
+
+.about-block__column {
+  @include mq-min(1024px) {
+    @include calc-column-width(2, 40px)
+  }
+}
+
+.about-block__picture {
+  @include make-fit-object(16, 10);
+
+  margin-bottom: 20px;
+}
+
+.about-block__text {
+
 }

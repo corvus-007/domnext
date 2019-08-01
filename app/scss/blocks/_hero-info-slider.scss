@@ -34,10 +34,13 @@
 }
 
 .hero-info-slider__item {
-  transition: 0.4s;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+  box-sizing: border-box;
+  transition: opacity 0.2s !important;
 
   &:not(.is-selected) {
-    opacity: 0;
+    opacity: 0 !important;
     pointer-events: none;
   }
 

@@ -57,7 +57,10 @@
 
   & > img,
   p > img,
-  div > img {
+  div > img,
+  & > iframe,
+  p > iframe,
+  div > iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;

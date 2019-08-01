@@ -12,6 +12,7 @@
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../node_modules/flickity/dist/flickity";
+@import "../../node_modules/flickity-fade/flickity-fade";
 // @import "../../node_modules/nouislider/distribute/nouislider";
 
 // Blocks
@@ -60,6 +61,7 @@
 @import "blocks/simple-cta";
 @import "blocks/cta";
 // @import "blocks/page-action-panel";
+@import "blocks/panorama";
 @import "blocks/about-intro";
 @import "blocks/common-significance";
 @import "blocks/significance-1";
@@ -70,6 +72,12 @@
 @import "blocks/about-slider";
 @import "blocks/about";
 @import "blocks/mortgage-lenders";
+@import "blocks/one-action-preview";
+@import "blocks/actions-preview-slider";
+@import "blocks/one-event-preview";
+@import "blocks/events-preview";
+@import "blocks/news-and-actions-preview";
+@import "blocks/one-event";
 // @import "blocks/filter-page";
 // @import "blocks/common-features-flat";
 // @import "blocks/flats-cards";
@@ -108,7 +116,7 @@
 @import "blocks/plans";
 @import "blocks/main-panel";
 @import "blocks/phone-panel";
-@import "blocks/floating-block";
+// @import "blocks/floating-block";
 
 
 // @import "blocks/page";

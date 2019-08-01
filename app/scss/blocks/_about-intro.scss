@@ -14,14 +14,14 @@
   line-height: 1.05;
   letter-spacing: 0;
   text-transform: none;
-  transform: translateX(-50px);
-  transition: $duration * 3;
-  opacity: 0;
+  // transform: translateX(-50px);
+  // transition: $duration * 3;
+  // opacity: 0;
 
-  .about-intro--active & {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  // .about-intro--active & {
+  //   transform: translateX(0);
+  //   opacity: 1;
+  // }
 
   @include mq-min(768px) {
     font-size: 55px;
@@ -44,14 +44,14 @@
 .about-intro__text {
   font-size: 16px;
   line-height: 1.5;
-  transform: translateX(50px);
-  transition: $duration * 3 $duration;
-  opacity: 0;
+  // transform: translateX(50px);
+  // transition: $duration * 3 $duration;
+  // opacity: 0;
 
-  .about-intro--active & {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  // .about-intro--active & {
+  //   transform: translateX(0);
+  //   opacity: 1;
+  // }
 
   & > * {
     margin-top: 0;

@@ -3,6 +3,8 @@ window.heroSection = (function(window, $) {
 
   $('[data-hero-info-slider]').flickity({
     pageDots: false,
-    cellAlign: 'right'
+    autoPlay: 5000,
+    wrapAround: true,
+    fade: true
   });
 })(window, jQuery);

@@ -11,4 +11,5 @@
 ////=require ../../node_modules/nouislider/distribute/nouislider.min.js
 ////=require ../../node_modules/current-device/umd/current-device.js
 //=require ../../node_modules/flickity/dist/flickity.pkgd.min.js
+//=require ../../node_modules/flickity-fade/flickity-fade.js
 ////=require ../../node_modules/handlebars/dist/handlebars.min.js

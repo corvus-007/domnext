@@ -54,7 +54,7 @@
 
 .main-header__toggle {
   order: 1;
-  margin-left: auto;
+  margin-left: 24px;
 
   @include mq-min(1024px) {
     display: none;
@@ -76,6 +76,8 @@
 }
 
 .main-header__contacts {
+  display: flex;
+  align-items: center;
   margin: 0;
   margin-left: auto;
   transform-origin: 100%;
@@ -93,7 +95,7 @@
 .main-header__phone {
   display: block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.15;
   text-decoration: none;
   color: #ffffff;
@@ -111,7 +113,6 @@
 
   .is-main-header-sticky &,
   body:not(.homepage) & {
-    // color: $base-color;
     color: $accent-color;
 
     &:hover,
@@ -120,34 +121,51 @@
     }
   }
 
-  // span {
-  //   font-size: rem(20);
-  //   vertical-align: sub;
-  //   color: $accent-color;
-  // }
-
-
-  @include mq-min(375px) {
-    // font-size: 12px;
-
-    // span {
-    //   font-size: 19px;
-    // }
+  @include mq-min(410px) {
+    font-size: 14px;
   }
 
   @include mq-min(768px) {
     font-size: 18px;
-
-    // span {
-    //   font-size: vh(34);
-    // }
   }
 
-  @include mq-min(768px) {
-    // color: $accent-color;
+  @include mq-min(1440px) {
+    font-size: 24px;
+  }
+}
+
+.main-header__callback-button {
+  margin-left: 24px;
+  padding: 12px;
+  color: #ffffff;
+  background-color: rgba($gray-245, 0.15);
+  border: 1px solid rgba(#ffffff, 0.1);
+  border-radius: 50%;
+  outline: none;
+  transition: 0.25s;
+  cursor: pointer;
+
+  .is-main-header-sticky &,
+  body:not(.homepage) & {
+    color: $base-color;
+    background-color: rgba($gray-245, 1);
   }
 
-  @include mq-min(1280px) {
-    font-size: 28px;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: rgba($gray-245, 1);
+    border-color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.76;
+  }
+
+  svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
   }
 }

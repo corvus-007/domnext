@@ -1,0 +1,12 @@
+.events-preview {
+}
+
+.events-preview__list {
+  @include clear-list();
+}
+
+.events-preview__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray-245;
+  }
+}

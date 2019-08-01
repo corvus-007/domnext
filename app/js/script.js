@@ -146,4 +146,16 @@ document.addEventListener('DOMContentLoaded', function() {
       selectedAttraction: 0.02
     });
   }
+
+  var actionsPreviewSlider = document.querySelector('[data-actions-preview-slider]');
+
+  if (actionsPreviewSlider) {
+    $(actionsPreviewSlider).flickity({
+      pageDots: true,
+      imagesLoaded: true,
+      lazyLoad: 1,
+      autoPlay: 5000,
+      wrapAround: true
+    });
+  }
 });
