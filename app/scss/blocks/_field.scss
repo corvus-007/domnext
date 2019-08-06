@@ -1,20 +1,30 @@
 .field {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .field__label {
-  margin-bottom: 6px;
-  margin-right: auto;
-  font-weight: 600;
-  font-size: rem(16);
+  position: absolute;
+  left: 8px;
+  transform-origin: left;
+  transform: translateY(20px);
+  font-weight: 500;
+  font-size: 14px;
+  color: $gray-138;
+  transition: 0.3s;
+  pointer-events: none;
 
   .field--required &::after {
     content: "*";
     font-size: rem(14);
     vertical-align: super;
     color: $danger-color;
+  }
+
+  .field--active & {
+    transform: translateY(-8px) scale(0.857);
   }
 }
 

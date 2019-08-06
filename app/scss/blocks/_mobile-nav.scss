@@ -8,21 +8,23 @@
   @include clear-list();
 
   width: 100%;
-  margin-left: $gutter / -2;
-  margin-right: $gutter / -2;
+  margin-left: -20px;
+  margin-right: -20px;
 
   a {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 700;
-    font-size: rem(24);
+    font-size: 24px;
     text-transform: uppercase;
     text-align: center;
+    color: $base-color;
   }
 
   .current-menu-item a {
     color: #ffffff;
-    background-color: $accent-color;
+    color: #ffb400;
+    // background-color: $accent-color;
   }
 }

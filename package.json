@@ -31,6 +31,7 @@
     "@fancyapps/fancybox": "^3.4.1",
     "current-device": "^0.8.0",
     "flickity": "^2.2.0",
+    "flickity-bg-lazyload": "^1.0.1",
     "flickity-fade": "^1.0.0",
     "gsap": "^2.0.2",
     "handlebars": "^4.1.2",

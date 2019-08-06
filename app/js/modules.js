@@ -18,3 +18,7 @@
 //=require modules/about-section.js
 //=require modules/hero-section.js
 //=require modules/panorama.js
+//=require modules/welcome.js
+//=require modules/about-complex.js
+//=require modules/compare.js
+//=require modules/float-label.js

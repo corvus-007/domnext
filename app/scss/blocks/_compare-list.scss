@@ -1,0 +1,51 @@
+.compare-list {
+  @include clear-list();
+
+  li {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 32px;
+    line-height: 1.2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &--standart {
+    li {
+      &::before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330'%3e%3cpath fill='%239cabb9' d='M165 0a165 165 0 1 0 0 330 165 165 0 0 0 0-330zM81 133a20 20 0 0 1 20-20 20 20 0 0 1 20 20 20 20 0 0 1-20 20 20 20 0 0 1-20-20zm146 94c-6 5-16 5-22 0a57 57 0 0 0-80 0 15 15 0 0 1-22 0c-5-6-5-16 0-22 17-16 39-25 62-25s45 9 62 25c5 6 5 16 0 22zm16-80a20 20 0 0 1-28 0 20 20 0 0 1 0-28 20 20 0 0 1 28 0 20 20 0 0 1 0 28z'/%3e%3c/svg%3e");
+      }
+    }
+  }
+
+  &--next {
+    li {
+      &::before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330'%3e%3cpath fill='%23ffb400' d='M165 0a165 165 0 1 0 0 330 165 165 0 0 0 0-330zM81 133a20 20 0 0 1 20-20 20 20 0 0 1 20 20 20 20 0 0 1-20 20 20 20 0 0 1-20-20zm146 94a87 87 0 0 1-124 0 15 15 0 1 1 22-22c22 23 58 23 80 0a15 15 0 0 1 22 22zm16-80a20 20 0 0 1-28 0 20 20 0 0 1 0-28 20 20 0 0 1 28 0 20 20 0 0 1 0 28z'/%3e%3c/svg%3e");
+      }
+    }
+  }
+
+  @include mq-min(667px) {
+    li {
+      font-size: 16px;
+    }
+  }
+
+  @include mq-min(768px) {
+    margin-bottom: 16px;
+  }
+}

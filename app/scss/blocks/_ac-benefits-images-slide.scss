@@ -1,0 +1,12 @@
+.ac-benefits-images-slide {
+
+}
+
+.ac-benefits-images-slide__picture {
+  @include make-fit-object(640, 550);
+  max-height: 540px;
+
+  @include mq-min(1440px) {
+    // @include make-fit-object(16, 9);
+  }
+}

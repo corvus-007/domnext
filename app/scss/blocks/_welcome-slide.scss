@@ -1,0 +1,125 @@
+.welcome-slide {
+  box-sizing: border-box;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  color: #ffffff;
+  background-color: #757575;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #323c45;
+    opacity: 0.32;
+  }
+}
+
+.welcome-slide__content {
+  position: relative;
+  padding-top: 100px;
+
+  @include mq-min(667px) {
+    max-width: 360px;
+    margin-left: initial;
+    padding-top: 48px;
+  }
+
+  @include mq-min(768px) {
+    max-width: 672px;
+    margin-left: auto;
+    padding-top: 200px;
+  }
+
+  @include mq-min(1024px) {
+    padding-top: 180px;
+  }
+}
+
+.welcome-slide__title {
+  max-width: 660px;
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 0.92;
+  text-transform: none;
+  color: #ffffff;
+
+  @include mq-min(768px) {
+    font-size: 72px;
+  }
+}
+
+.welcome-slide__text {
+  @include clear-mr-edges-elem();
+
+  max-width: 372px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.welcome-slide__actions {
+  margin: 0;
+  margin-top: 40px;
+}
+
+.welcome-slide__link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.045em;
+  color: #ffffff;
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.welcome-slide__link-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.25s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 10px;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    border: 2px solid $base-color;
+    border-top: none;
+    border-left: none;
+    transition: 0.25s;
+    pointer-events: none;
+  }
+
+  .hero__link:hover &,
+  .hero__link:focus & {
+    background-color: $accent-color;
+
+    &::before {
+      border-color: #ffffff;
+    }
+  }
+}

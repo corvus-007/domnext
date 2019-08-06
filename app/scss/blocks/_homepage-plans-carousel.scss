@@ -1,4 +1,5 @@
-.common-plans-slider {
+.homepage-plans-carousel {
+  box-sizing: border-box;
 
   .flickity-page-dots {
     bottom: -36px;
@@ -18,9 +19,20 @@
   .flickity-slider {
     display: flex;
   }
+
+  @include mq-min(1280px) {
+    padding-left: 20px;
+    padding-right: 60px;
+
+    .flickity-page-dots {
+      left: 50%;
+      right: 80px;
+      width: auto;
+    }
+  }
 }
 
-.common-plans-slider__item {
+.homepage-plans-carousel__item {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -28,25 +40,28 @@
   will-change: transform, opacity;
 
   @include mq-min(568px) {
-    width: calc(100% / 2);
+    width: calc(100% / 3);
     transform: scale3d(0.8, 0.8, 0.8);
     opacity: 0.6;
     transition: transform $duration * 2, opacity $duration * 2;
 
     &.is-selected {
       opacity: 1;
-      transform: scale(1);
+      transform: scale3d(1, 1, 1);
     }
+  }
+  @include mq-min(1280px) {
+    width: 50%;
   }
 }
 
-.common-plans-slider__picture {
+.homepage-plans-carousel__picture {
   @include make-fit-object(1, 1, contain);
 
   margin-bottom: 28px;
 }
 
-.common-plans-slider__caption {
+.homepage-plans-carousel__caption {
   margin: 0;
   font-size: 18px;
   font-weight: 600;

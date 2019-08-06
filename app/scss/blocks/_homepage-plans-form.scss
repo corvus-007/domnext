@@ -1,0 +1,46 @@
+.homepage-plans-form {
+  padding: 52px;
+  background-color: #f3f2f2;
+
+  @include mq-min(667px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px;
+  }
+
+  @include mq-min(1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mq-min(1280px) {
+    grid-template-columns: auto;
+  }
+}
+
+.homepage-plans-form__field {
+  @include mq-min(667px) {
+    margin-bottom: 0;
+  }
+}
+
+.homepage-plans-form__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 52px;
+
+  @include mq-min(667px) {
+    grid-column: 1/-1;
+    margin-top: 12px;
+  }
+
+  @include mq-min(1024px) {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  @include mq-min(1280px) {
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+}

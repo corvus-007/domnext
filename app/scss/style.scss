@@ -34,6 +34,7 @@
 @import "blocks/popup";
 @import "blocks/socials";
 @import "blocks/common-title";
+@import "blocks/shadow-title";
 @import "blocks/common-section";
 // @import "blocks/custom-ol";
 // @import "blocks/custom-ul";
@@ -52,7 +53,30 @@
 @import "blocks/hero-info-slider";
 @import "blocks/hero-info-block";
 @import "blocks/all-apartments-section";
-@import "blocks/hero";
+
+@import "blocks/welcome-slide";
+@import "blocks/welcome-carousel";
+@import "blocks/welcome";
+@import "blocks/ac-benefits-images-slide";
+@import "blocks/ac-benefits-images-carousel";
+@import "blocks/ac-benefits-descriptions-slide";
+@import "blocks/ac-benefits-descriptions-carousel";
+@import "blocks/ac-benefits-descriptions-navigation";
+@import "blocks/about-complex-content";
+@import "blocks/about-complex";
+
+@import "blocks/compare-list";
+@import "blocks/compare-tabs";
+@import "blocks/compare";
+
+@import "blocks/homepage-plans-form";
+@import "blocks/homepage-plans-carousel";
+@import "blocks/homepage-plans";
+
+@import "blocks/top-view-benefits";
+@import "blocks/top-view-benefit-popup";
+
+// @import "blocks/hero";
 @import "blocks/quiz";
 @import "blocks/about-section-slider";
 @import "blocks/about-section";
