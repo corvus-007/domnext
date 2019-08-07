@@ -21,11 +21,18 @@
   @include mq-min(1024px) {
     margin-left: 4.5%;
   }
+
+  @include mq-min(1600px) {
+    max-width: 448px;
+  }
 }
 
 .about-complex-content__text {
   @include clear-mr-edges-elem();
 
+  @include mq-min(1600px) {
+    font-size: 20px;
+  }
 }
 
 .about-complex-content__actions {

@@ -1,0 +1,52 @@
+.welcome-carousel-navigation {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.welcome-carousel-navigation__counter {
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: auto;
+}
+
+.welcome-carousel-navigation__button {
+  position: relative;
+  pointer-events: all;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  background-color: rgba(#ffffff, 0.75);
+  border: none;
+  border-radius: 50%;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 4px #19f;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 44%;
+    height: 44%;
+    margin: auto;
+  }
+}

@@ -2,7 +2,7 @@ window.floatLabel = (() => {
   // add active class and placeholder
   const handleFocus = e => {
     const target = e.target;
-    target.parentNode.classList.add('field--active');
+    target.closest('.field').classList.add('field--active');
     target.setAttribute('placeholder', target.getAttribute('data-placeholder'));
   };
 
@@ -10,7 +10,7 @@ window.floatLabel = (() => {
   const handleBlur = e => {
     const target = e.target;
     if (!target.value) {
-      target.parentNode.classList.remove('field--active');
+      target.closest('.field').classList.remove('field--active');
     }
     target.removeAttribute('placeholder');
   };

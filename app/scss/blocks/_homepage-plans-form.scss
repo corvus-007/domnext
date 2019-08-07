@@ -6,6 +6,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 28px;
+
+    .wpcf7-response-output {
+      grid-column: 1/-1;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   @include mq-min(1024px) {

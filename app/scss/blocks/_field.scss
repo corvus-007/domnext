@@ -12,7 +12,7 @@
   transform: translateY(20px);
   font-weight: 500;
   font-size: 14px;
-  color: $gray-138;
+  color: #9cabb9;
   transition: 0.3s;
   pointer-events: none;
 
@@ -29,12 +29,33 @@
 }
 
 .field__control {
-  width: 100%;
   position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition: transform 0.4s 0.4s;
+    background-color: #ffb400;
+  }
+
+   &:focus-within {
+    &::before {
+      transform: scaleX(1);
+      transform-origin: 0;
+      transition-delay: 0s;
+    }
+  }
 }
 
 .field__input {
-
 }
 
 .field__text {

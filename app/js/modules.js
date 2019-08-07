@@ -16,7 +16,7 @@
 //=require modules/notification.js
 //=require modules/features-popups.js
 //=require modules/about-section.js
-//=require modules/hero-section.js
+////=require modules/hero-section.js
 //=require modules/panorama.js
 //=require modules/welcome.js
 //=require modules/about-complex.js

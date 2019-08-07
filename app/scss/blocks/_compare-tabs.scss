@@ -43,6 +43,11 @@
     font-size: 52px;
   }
 
+  &:hover,
+  &:focus {
+    color: #9cabb9;
+  }
+
   .active & {
     color: #ffb400;
   }
@@ -53,6 +58,14 @@
 
     span {
       font-size: 72px;
+    }
+  }
+
+  @include mq-min(1600px) {
+    font-size: 24px;
+
+    span {
+      font-size: 80px;
     }
   }
 }

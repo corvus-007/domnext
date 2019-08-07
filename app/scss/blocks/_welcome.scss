@@ -3,7 +3,6 @@
 }
 
 .welcome__carousel {
-
 }
 
 .welcome__info-block {
@@ -11,6 +10,15 @@
   left: 20px;
   right: 20px;
   bottom: calc(50px + 80px); // отступ снизу от кнопки лидбэка + высота иконки лидбэка
+
+  @include mq-min(1024px) {
+    left: auto;
+    width: 50%;
+  }
+
+  @include mq-min(1280px) {
+    width: 40%;
+  }
 }
 
 .welcome__copy-holder {

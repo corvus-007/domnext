@@ -8,6 +8,6 @@
   box-sizing: border-box;
 
   @include mq-min(1440px) {
-    max-width: calc(#{vh(1155)} + 40px);
+    max-width: calc(#{vh(1100)} + 40px);
   }
 }

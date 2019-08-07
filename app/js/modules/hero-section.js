@@ -6,6 +6,7 @@ window.heroSection = (function(window, $) {
     pageDots: false,
     autoPlay: 5000,
     wrapAround: true,
+    cellAlign: 'right',
     fade: true
   });
 })(window, jQuery);

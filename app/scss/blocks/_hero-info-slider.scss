@@ -2,6 +2,7 @@
   .flickity-prev-next-button {
     left: auto;
     right: 20px;
+    z-index: 10;
     top: calc(100% + 8px);
     width: 36px;
     height: 36px;
@@ -38,6 +39,7 @@
   transform: translate3d(0, 0, 0);
   box-sizing: border-box;
   transition: opacity 0.2s !important;
+  user-select: none;
 
   &:not(.is-selected) {
     opacity: 0 !important;

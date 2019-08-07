@@ -1,6 +1,10 @@
 .ac-benefits-descriptions-navigation {
   display: flex;
   align-items: center;
+
+  @include mq-min(1280px) {
+    justify-content: flex-end;
+  }
 }
 
 .ac-benefits-descriptions-navigation__button {
@@ -37,6 +41,10 @@
 
   @include mq-min(768px) {
     position: static;
+  }
+
+  @include mq-min(1280px) {
+    flex-grow: initial;
   }
 }
 

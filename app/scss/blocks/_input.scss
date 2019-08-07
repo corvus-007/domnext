@@ -15,9 +15,8 @@
   box-sizing: border-box;
   transition: $duration * 2;
 
-  &:hover,
-  &:focus {
-    border-bottom-color: $base-color;
+  &:hover {
+    border-bottom-color: $gray-138;
   }
 
   &::placeholder {

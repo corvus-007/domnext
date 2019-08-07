@@ -35,29 +35,20 @@ window.aboutComplex = (function(window, $) {
     '.ac-benefits-descriptions-navigation__counter'
   );
 
-  function updateCounter(selectedIndex) {
-    const size = acBenefitsDescriptionsCarouselInstance.cells.length;
-    // const selectedIndex = acBenefitsDescriptionsCarouselInstance.selectedIndex + 1;
-    benefitsDescriptionsCounter.textContent = `${selectedIndex}/${size}`;
-  }
-
-  acBenefitsDescriptionsCarouselInstance.on('select', function (index) {
+  acBenefitsDescriptionsCarouselInstance.on('select', function(index) {
     updateCounter(index + 1);
   });
 
-  const selectedIndex = acBenefitsDescriptionsCarouselInstance.selectedIndex + 1;
-  updateCounter(1);
+  updateCounter(getSelectedIndexSlide());
 
   benefitsDescriptionsPrev.addEventListener('click', function() {
     acBenefitsDescriptionsCarouselInstance.previous();
-    const selectedIndex = acBenefitsDescriptionsCarouselInstance.selectedIndex + 1;
-    updateCounter(selectedIndex);
+    updateCounter(getSelectedIndexSlide());
   });
 
   benefitsDescriptionsNext.addEventListener('click', function() {
     acBenefitsDescriptionsCarouselInstance.next();
-    const selectedIndex = acBenefitsDescriptionsCarouselInstance.selectedIndex + 1;
-    updateCounter(selectedIndex);
+    updateCounter(getSelectedIndexSlide());
   });
 
   const acBenefitsImagesCarouselInstance = new Flickity(
@@ -70,4 +61,13 @@ window.aboutComplex = (function(window, $) {
       pageDots: false
     }
   );
+
+  function updateCounter(selectedIndex) {
+    const size = acBenefitsDescriptionsCarouselInstance.cells.length;
+    benefitsDescriptionsCounter.textContent = `${selectedIndex}/${size}`;
+  }
+
+  function getSelectedIndexSlide() {
+    return acBenefitsDescriptionsCarouselInstance.selectedIndex + 1;
+  }
 })(window, jQuery);

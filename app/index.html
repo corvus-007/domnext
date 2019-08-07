@@ -14,7 +14,7 @@
 
   <section class="welcome">
     <div class="welcome-carousel" data-welcome-carousel>
-      <div class="welcome-carousel__item welcome-slide carousel-cell" data-flickity-bg-lazyload="https://images.unsplash.com/photo-1530074580-33acc6db2ed7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80)">
+      <div class="welcome-carousel__item welcome-slide carousel-cell" data-flickity-bg-lazyload="/images/welcome-slides/slide-1.jpg">
         <div class="welcome-slide__content container">
           <h2 class="welcome-slide__title">Умный дом <br> в центре Бежицы</h2>
           <div class="welcome-slide__text">
@@ -28,7 +28,7 @@
           </p>
         </div>
       </div>
-      <div class="welcome-carousel__item welcome-slide carousel-cell" data-flickity-bg-lazyload="https://images.unsplash.com/photo-1462774603919-1d8087e62cad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+      <div class="welcome-carousel__item welcome-slide carousel-cell" data-flickity-bg-lazyload="/images/welcome-slides/slide-2.jpg">
         <div class="welcome-slide__content container">
           <h2 class="welcome-slide__title">Умный дом <br> в центре Бежицы</h2>
           <div class="welcome-slide__text">
@@ -42,6 +42,21 @@
           </p>
         </div>
       </div>
+      <div class="welcome-carousel__navigation-holder container">
+        <div class="welcome-carousel__navigation welcome-carousel-navigation">
+          <div class="welcome-carousel-navigation__counter"></div>
+          <button class="welcome-carousel-navigation__button welcome-carousel-navigation__button--prev" type="button" aria-label="Предыдущий слайд">
+            <svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50 L 70,10 L 60,0 Z"></path>
+            </svg>
+          </button>
+          <button class="welcome-carousel-navigation__button welcome-carousel-navigation__button--next" type="button" aria-label="Следующий слайд">
+            <svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50 L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180)"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="welcome__info-block hero-info-block">
@@ -51,7 +66,7 @@
             <div class="hero-info-block__text-wrapper">
               <h3 class="hero-info-block__title">
                 <em>Специальное предложение</em>
-                <strong>Квартира<br /> июля</strong>
+                <strong>Квартира<br> июля</strong>
               </h3>
             </div>
             <div class="hero-info-block__media-wrapper">
@@ -66,7 +81,7 @@
             <div class="hero-info-block__text-wrapper">
               <h3 class="hero-info-block__title">
                 <em>Специальное предложение</em>
-                <strong>Квартира<br /> июля 2</strong>
+                <strong>Квартира<br> июля 2</strong>
               </h3>
             </div>
             <div class="hero-info-block__media-wrapper">
@@ -81,7 +96,7 @@
             <div class="hero-info-block__text-wrapper">
               <h3 class="hero-info-block__title">
                 <em>Специальное предложение</em>
-                <strong>Квартира<br /> июля 3</strong>
+                <strong>Квартира<br> июля 3</strong>
               </h3>
             </div>
             <div class="hero-info-block__media-wrapper">
@@ -96,7 +111,7 @@
             <div class="hero-info-block__text-wrapper">
               <h3 class="hero-info-block__title">
                 <em>Специальное предложение</em>
-                <strong>Ипотека <br />от 4,9%</strong>
+                <strong>Ипотека <br>от 4,9%</strong>
               </h3>
             </div>
             <div class="hero-info-block__media-wrapper">
@@ -168,23 +183,28 @@
           <h3 class="ac-benefits-descriptions-slide__title">
             Современная система охраны
           </h3>
-          <ul class="ac-benefits-descriptions-slide__list">
-            <li>
-              объединяет в себе различного рода устройства и датчики
-            </li>
-            <li>
-              режим «Дома»: все датчики отключены 24/7
-            </li>
-            <li>
-              режим «Ночь»: датчики работают в режиме ожидания
-            </li>
-            <li>
-              режим «Охрана»: все датчики активны
-            </li>
-            <li>
-              в случае тревоги, на телефон поступает SMS
-            </li>
-          </ul>
+          <div class="ac-benefits-descriptions-slide__content">
+            <p>
+              Система обладает широкими возможностями и позволяет объединить в себе различного рода устройства и датчики.
+            </p>
+            <p>
+              Теперь, уходя из дома можно будет включить режим охраны.
+            </p>
+            <ul class="ac-benefits-descriptions-slide__list">
+              <li>
+                «Дома»: все датчики отключены 24/7
+              </li>
+              <li>
+                «Ночь»: датчики работают в режиме ожидания
+              </li>
+              <li>
+                «Охрана»: все датчики активны
+              </li>
+            </ul>
+            <p>
+              В случае возникновения непредвиденной ситуации на мобильный телефон приходит уведомление.
+            </p>
+          </div>
         </div>
         <div class="ac-benefits-descriptions-carousel__item ac-benefits-descriptions-slide carousel-cell">
           <span class="ac-benefits-descriptions-slide__count">02</span>
@@ -430,7 +450,7 @@
     <div hidden>
       <div class="top-view-benefit-popup" id="popup-horse" hidden>
         <div class="top-view-benefit-popup__headline">
-          <h2 class="top-view-benefit-popup__title">popup-horse</h2>
+          <h3 class="top-view-benefit-popup__title">popup-horse</h3>
         </div>
         <div class="top-view-benefit-popup__content">
           <p>
@@ -440,7 +460,7 @@
       </div>
       <div class="top-view-benefit-popup" id="popup-tree" hidden>
         <div class="top-view-benefit-popup__headline">
-          <h2 class="top-view-benefit-popup__title">popup-tree</h2>
+          <h3 class="top-view-benefit-popup__title">popup-tree</h3>
         </div>
         <div class="top-view-benefit-popup__content">
           <p>
@@ -450,7 +470,7 @@
       </div>
       <div class="top-view-benefit-popup" id="popup-car" hidden>
         <div class="top-view-benefit-popup__headline">
-          <h2 class="top-view-benefit-popup__title">popup-car</h2>
+          <h3 class="top-view-benefit-popup__title">popup-car</h3>
         </div>
         <div class="top-view-benefit-popup__content">
           <p>
@@ -460,7 +480,7 @@
       </div>
       <div class="top-view-benefit-popup" id="popup-bench" hidden>
         <div class="top-view-benefit-popup__headline">
-          <h2 class="top-view-benefit-popup__title">popup-bench</h2>
+          <h3 class="top-view-benefit-popup__title">popup-bench</h3>
         </div>
         <div class="top-view-benefit-popup__content">
           <p>
@@ -470,7 +490,7 @@
       </div>
       <div class="top-view-benefit-popup" id="popup-cctv-camera" hidden>
         <div class="top-view-benefit-popup__headline">
-          <h2 class="top-view-benefit-popup__title">popup-cctv-camera</h2>
+          <h3 class="top-view-benefit-popup__title">popup-cctv-camera</h3>
         </div>
         <div class="top-view-benefit-popup__content">
           <p>
@@ -480,7 +500,7 @@
       </div>
       <div class="top-view-benefit-popup" id="popup-window" hidden>
         <div class="top-view-benefit-popup__headline">
-          <h2 class="top-view-benefit-popup__title">popup-window</h2>
+          <h3 class="top-view-benefit-popup__title">popup-window</h3>
         </div>
         <div class="top-view-benefit-popup__content">
           <p>
@@ -575,11 +595,15 @@
           <form class="homepage-plans__form homepage-plans-form" action="">
             <label class="homepage-plans-form__field field float-container">
               <span class="field__label">Введите ваше имя</span>
-              <input type="text" class="field__input input" name="username" data-placeholder="">
+              <div class="field__control">
+                <input type="text" class="field__input input" name="username" data-placeholder="">
+              </div>
             </label>
             <label class="homepage-plans-form__field field field--required float-container">
               <span class="field__label">Телефон</span>
-              <input type="tel" class="field__input input" name="userphone" data-placeholder="" required>
+              <div class="field__control">
+                <input type="tel" class="field__input input" name="userphone" data-placeholder="" required>
+              </div>
             </label>
             <div class="homepage-plans-form__actions">
               <button class="homepage-plans-form__submit button button--arrow" type="submit">Запросить стоимость</button>
