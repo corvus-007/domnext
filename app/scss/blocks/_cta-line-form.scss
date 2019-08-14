@@ -19,10 +19,6 @@
 .cta-line-form__field {
   width: 100%;
 
-  .field__label {
-    @include visually-hidden();
-  }
-
   @include mq-range(568px, 666px) {
     width: calc((100% - 1 * 20px) / 2);
     margin-right: 20px;

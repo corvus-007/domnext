@@ -35,7 +35,7 @@
 
 .welcome-carousel__navigation-holder {
   position: absolute;
-  top: 68px;
+  top: calc(68px - 4px);
   left: 0;
   right: 0;
   z-index: 2;
@@ -50,10 +50,10 @@
   padding-top: calc(180px + 24px);
 
   @media (min-height: 800px) {
-    padding-top: calc(28vh + 24px);
+    // padding-top: calc(28vh + 24px);
 
     @include mq-min(1600px) {
-      padding-top: calc(28vh + 28px);
+      padding-top: calc(28vh + 30px);
     }
   }
 }

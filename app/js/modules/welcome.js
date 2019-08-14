@@ -35,7 +35,7 @@ window.welcome = (function(window, $) {
     cellSelector: '.carousel-cell',
     adaptiveHeight: false,
     wrapAround: true,
-    autoPlay: 6000,
+    // autoPlay: 6000,
     bgLazyLoad: true,
     bgLazyLoad: 2,
     prevNextButtons: false,

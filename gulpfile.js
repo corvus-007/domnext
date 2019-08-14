@@ -36,9 +36,7 @@ gulp.task('style', function () {
     )
     .pipe(
       postcss([
-        autoprefixer({
-          browsers: ['last 2 version']
-        })
+        autoprefixer()
       ])
     )
     .pipe(minify())
@@ -66,6 +64,11 @@ gulp.task('modules-js', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('copy-jquery', function () {
+  return gulp.src('app/js/jquery.min.js')
+  .pipe(gulp.dest('build/js'));
+});
+
 gulp.task('copy-script', function () {
   gulp
     .src([
@@ -73,7 +76,8 @@ gulp.task('copy-script', function () {
       '!app/js/plugins/**',
       '!app/js/modules/**',
       '!app/js/modules.js',
-      '!app/js/plugins.js'
+      '!app/js/plugins.js',
+      '!app/js/jquery.min.js'
     ])
     .pipe(babel({
       presets: ['@babel/env']
@@ -129,6 +133,7 @@ gulp.task('build', function (fn) {
     'copy-fonts',
     'copy-images',
     'copy-script',
+    'copy-jquery',
     'style',
     'plugins-js',
     'modules-js',

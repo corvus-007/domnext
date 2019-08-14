@@ -11,19 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     mask: '+7 (999) 999-99-99'
   });
 
-  var scrollDownPointer = document.querySelector('.scroll-down-pointer');
-  var headerStickyHeight = 76;
-
-  if (scrollDownPointer) {
-    scrollDownPointer.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      window.scrollTo({
-        top: document.documentElement.clientHeight - headerStickyHeight,
-        behavior: 'smooth'
-      });
-    });
-  }
-
   window.addEventListener('scroll', function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 0) {

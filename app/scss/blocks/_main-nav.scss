@@ -10,6 +10,18 @@
   font-size: 14px;
   background-color: #ffffff;
   border: none;
+
+  .is-main-header-sticky &,
+  body:not(.homepage) & {
+    background-color: $gray-242;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: $base-color;
+      border-color: $base-color;
+    }
+  }
 }
 
 .main-nav__list {

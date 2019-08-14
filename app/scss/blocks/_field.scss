@@ -6,20 +6,22 @@
 }
 
 .field__label {
-  position: absolute;
-  left: 8px;
-  transform-origin: left;
-  transform: translateY(20px);
   font-weight: 500;
   font-size: 14px;
   color: #9cabb9;
   transition: 0.3s;
   pointer-events: none;
 
+  .float-container & {
+    position: absolute;
+    left: 8px;
+    transform-origin: left;
+    transform: translateY(20px);
+  }
+
   .field--required &::after {
     content: "*";
     font-size: rem(14);
-    vertical-align: super;
     color: $danger-color;
   }
 
@@ -46,7 +48,7 @@
     background-color: #ffb400;
   }
 
-   &:focus-within {
+   .float-container &:focus-within {
     &::before {
       transform: scaleX(1);
       transform-origin: 0;

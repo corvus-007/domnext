@@ -3,7 +3,7 @@ window.floatLabel = (() => {
   const handleFocus = e => {
     const target = e.target;
     target.closest('.field').classList.add('field--active');
-    target.setAttribute('placeholder', target.getAttribute('data-placeholder'));
+    target.setAttribute('placeholder', target.getAttribute('data-placeholder') || '');
   };
 
   // remove active class and placeholder

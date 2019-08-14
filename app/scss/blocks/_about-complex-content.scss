@@ -57,7 +57,7 @@
   margin-right: -20px;
 
   @include mq-min(667px) {
-    @include make-fit-object(300, 335);
+    @include make-fit-object(300, 300);
 
     flex-shrink: 0;
     width: 260px;
