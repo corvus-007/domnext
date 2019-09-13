@@ -1,0 +1,76 @@
+.compare-tabs {
+  position: relative;
+}
+
+.compare-tabs__menu {
+  @include clear-list();
+
+  position: sticky;
+  top: $height-header-mobile--sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #ffffff;
+
+  @include mq-min(1280px) {
+    top: $height-header-desktop--sticky;
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.compare-tabs__item {
+}
+
+.compare-tabs__link {
+  display: block;
+  padding: 4px 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.9;
+  text-align: center;
+  text-decoration: none;
+  color: $base-color;
+  transition: 0.3s;
+
+  span {
+    display: block;
+    font-size: 52px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #9cabb9;
+  }
+
+  .active & {
+    color: #ffb400;
+  }
+
+  @include mq-min(667px) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    span {
+      font-size: 72px;
+    }
+  }
+
+  @include mq-min(1600px) {
+    font-size: 24px;
+
+    span {
+      font-size: 80px;
+    }
+  }
+}
+
+.compare-tabs__pane {
+  position: relative;
+  z-index: -1;
+}

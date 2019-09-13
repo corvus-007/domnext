@@ -13,12 +13,17 @@
 }
 
 .news-and-actions-preview__column {
+  &--actions {
+    margin-bottom: 52px;
+  }
+
   @include mq-min(1024px) {
     @include calc-column-width(2, 40px);
 
     &--actions {
       position: sticky;
       top: calc(#{$height-header-desktop--sticky} + 32px);
+      margin-bottom: 0;
     }
   }
 }

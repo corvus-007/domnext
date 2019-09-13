@@ -1,0 +1,41 @@
+.top-view-benefits {
+}
+
+.top-view-benefits__svg {
+  display: block;
+  width: 100%;
+
+  [data-name="circles"] {
+    circle {
+      transition: 0.4s;
+    }
+  }
+
+  [data-name="bg-icon"] {
+    transition: 0.4s 0.05s cubic-bezier(0, 0.79, 0.54, 1.4);
+  }
+
+  a:hover {
+    [data-name="circles"] {
+      circle {
+        &:nth-child(1) {
+          opacity: 1;
+        }
+      }
+    }
+
+    [data-name="bg-icon"] {
+      r: 30;
+    }
+  }
+
+  a:focus-visible {
+    [data-name="circles"] {
+      circle {
+        &:nth-child(1) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

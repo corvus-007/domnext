@@ -4,7 +4,7 @@ window.contactsMap = (function (window, $) {
   var dirname = window.util.isDevMode() ? '' : '/wp-content/themes/next/';
   var mapElem = document.querySelector('#contacts-map');
 
-  if (!mapElem) {
+  if (!(mapElem && window.ymaps)) {
     return;
   }
 

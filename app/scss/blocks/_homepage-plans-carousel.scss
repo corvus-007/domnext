@@ -1,0 +1,74 @@
+.homepage-plans-carousel {
+  box-sizing: border-box;
+
+  .flickity-page-dots {
+    bottom: -36px;
+  }
+
+  .dot {
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: $brown-color;
+    transition: transform $duration;
+
+    &:not(.is-selected) {
+      transform: scale3d(0.7, 0.7, 0.7);
+    }
+  }
+
+  .flickity-slider {
+    display: flex;
+  }
+
+  @include mq-min(1280px) {
+    padding-left: 20px;
+    padding-right: 60px;
+
+    .flickity-page-dots {
+      left: 50%;
+      right: 80px;
+      width: auto;
+    }
+  }
+}
+
+.homepage-plans-carousel__item {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  will-change: transform, opacity;
+
+  @include mq-min(568px) {
+    width: calc(100% / 3);
+    transform: scale3d(0.8, 0.8, 0.8);
+    opacity: 0.6;
+    transition: transform $duration * 2, opacity $duration * 2;
+
+    &.is-selected {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @include mq-min(1280px) {
+    width: 50%;
+  }
+}
+
+.homepage-plans-carousel__picture {
+  @include make-fit-object(1, 1, contain);
+
+  margin-bottom: 28px;
+}
+
+.homepage-plans-carousel__caption {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+
+  @include mq-min(1600px) {
+    font-size: 20px;
+  }
+}

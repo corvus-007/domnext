@@ -1,0 +1,99 @@
+.compare {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.compare__headline {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+.compare__main {
+  position: relative;
+}
+
+.compare__tabs {
+
+}
+
+.compare__section {
+}
+
+.compare__columns {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq-min(667px) {
+  }
+}
+
+.compare__column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 48px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mq-min(667px) {
+    @include calc-column-width(2, 20px);
+
+    margin-bottom: 0;
+  }
+}
+
+.compare__figure {
+  margin: 0;
+  margin-bottom: 28px;
+
+  @include mq-min(768px) {
+    margin-bottom: 48px;
+  }
+}
+
+.compare__picture {
+  @include make-fit-object(16, 10, contain);
+
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 12px;
+
+  @include mq-min(667px) {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.compare__figure-caption {
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+
+  @include mq-min(768px) {
+    font-size: 32px;
+  }
+}
+
+.compare__figure-area {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.compare__list {
+  align-self: center;
+  max-width: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mq-min(768px) {
+    margin-bottom: 16px;
+  }
+
+  @include mq-min(1600px) {
+    max-width: 400px;
+  }
+}

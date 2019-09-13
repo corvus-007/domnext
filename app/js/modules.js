@@ -2,7 +2,7 @@
 //=require modules/splash-screen.js
 //=require modules/out-cover.js
 //=require modules/animations.js
-//=require modules/ambilight.js
+////=require modules/ambilight.js
 //=require modules/map.js
 ////=require modules/district.js
 //=require modules/contacts-map.js
@@ -14,7 +14,11 @@
 ////=require modules/flat-filters.js
 ////=require modules/flat.js
 //=require modules/notification.js
-//=require modules/features-popups.js
-//=require modules/about-section.js
-//=require modules/hero-section.js
+////=require modules/features-popups.js
+////=require modules/about-section.js
+////=require modules/hero-section.js
 //=require modules/panorama.js
+//=require modules/welcome.js
+//=require modules/about-complex.js
+//=require modules/compare.js
+//=require modules/float-label.js

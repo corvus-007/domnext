@@ -1,5 +1,4 @@
 .common-plans-slider {
-  margin-top: 30px;
 
   .flickity-page-dots {
     bottom: -36px;
@@ -23,13 +22,13 @@
 
 .common-plans-slider__item {
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
   will-change: transform, opacity;
 
   @include mq-min(568px) {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     transform: scale3d(0.8, 0.8, 0.8);
     opacity: 0.6;
     transition: transform $duration * 2, opacity $duration * 2;

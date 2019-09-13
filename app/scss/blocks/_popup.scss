@@ -3,6 +3,10 @@
   max-width: 500px;
   padding: 40px;
   border-radius: $border-radius;
+
+  &--narrow {
+    max-width: 400px;
+  }
 }
 
 .popup__title {
