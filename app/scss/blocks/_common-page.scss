@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 
   @include mq-min(1024px) {
-    padding-top: $height-header-desktop + 35px;
+    padding-top: $height-header-desktop + 40px;
   }
 }
 
