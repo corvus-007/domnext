@@ -9,7 +9,7 @@
   position: absolute;
   left: 20px;
   right: 20px;
-  bottom: calc(50px + 80px); // отступ снизу от кнопки лидбэка + высота иконки лидбэка
+  bottom: calc(50px + 150px); // отступ снизу от кнопки лидбэка + высота иконки лидбэка
 
   @include mq-min(1024px) {
     left: auto;
