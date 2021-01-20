@@ -33,7 +33,7 @@
     "flickity": "^2.2.0",
     "flickity-bg-lazyload": "^1.0.1",
     "flickity-fade": "^1.0.0",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "handlebars": "^4.1.2",
     "inputmask": "^4.0.2",
     "nouislider": "^12.0.0",
